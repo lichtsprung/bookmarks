@@ -1,0 +1,46 @@
+package controllers
+
+import models._
+
+import play.api.mvc._
+import play.api.data.Form
+import play.api.data.Forms._
+
+object Application extends Controller {
+
+  val form = Form(
+    mapping(
+      "url" -> nonEmptyText,
+      "title" -> text,
+      "author" -> text,
+      "description" -> text,
+      "tags" -> text
+    )(Bookmark.apply)(Bookmark.unapply)
+  )
+
+  def index = Action {
+    Redirect(routes.Application.bookmarks)
+  }
+
+  def bookmarks = Action {
+    Ok(views.html.index(Bookmark.all, form))
+  }
+
+  def newBookmark = Action {
+    implicit request =>
+      form.bindFromRequest.fold(
+        hasErrors => BadRequest(views.html.index(Bookmark.all, hasErrors)),
+        success => {
+          Bookmark.create(success.url, success.title, success.author, success.description, success.tags)
+          Redirect(routes.Application.bookmarks)
+        }
+
+      )
+  }
+
+  def deleteBookmark(url: String) = Action {
+    Bookmark.delete(url)
+    Redirect(routes.Application.bookmarks)
+  }
+
+}

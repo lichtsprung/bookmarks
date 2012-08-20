@@ -1,0 +1,37 @@
+@(bookmarks: List[Bookmark], bookmarkForm: Form[Bookmark])
+
+@import helper._
+
+@main("Bookmark Manager") {
+<h1>@bookmarks.size Bookmark(s):</h1>
+
+<ul>
+    @bookmarks.map{ bookmark =>
+    <li>
+        <div id="bookmark">
+            <div id="url"><a href=@bookmark.url>@bookmark.url</a></div>
+            <div id="docName">@bookmark.title</div>
+            <div id="author">@bookmark.author</div>
+            <div id="description">@bookmark.description</div>
+            <div id="tags">@bookmark.tags</div>
+            <div id="deleteBookmark">
+                @form(routes.Application.deleteBookmark(bookmark.url)) {
+                <input type="submit" value="Delete">
+                }
+            </div>
+        </div>
+    </li>
+    }
+</ul>
+
+<h2>New Bookmark</h2>
+
+@form(routes.Application.newBookmark){
+@inputText(bookmarkForm("url"))
+@inputText(bookmarkForm("title"))
+@inputText(bookmarkForm("author"))
+@inputText(bookmarkForm("description"))
+@inputText(bookmarkForm("tags"))
+<input type="submit" value="Create">
+}
+}
