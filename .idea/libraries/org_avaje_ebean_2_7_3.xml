@@ -1,13 +1,9 @@
 <component name="libraryTable">
   <library name="org.avaje_ebean_2.7.3">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/org.avaje/ebean/jars/ebean-2.7.3.jar!/" />
+      <root url="jar://$USER_HOME$/Tools/play/repository/local/org.avaje/ebean/2.7.3/jars/ebean.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/org.avaje/ebean/docs/ebean-2.7.3-javadoc.jar!/" />
-    </JAVADOC>
-    <SOURCES>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/org.avaje/ebean/srcs/ebean-2.7.3-sources.jar!/" />
-    </SOURCES>
+    <JAVADOC />
+    <SOURCES />
   </library>
 </component>

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="net.sourceforge.owlapi_owlapi-parsers_3.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Tools/play/repository/cache/net.sourceforge.owlapi/owlapi-parsers/jars/owlapi-parsers-3.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Tools/play/repository/cache/net.sourceforge.owlapi/owlapi-parsers/docs/owlapi-parsers-3.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Tools/play/repository/cache/net.sourceforge.owlapi/owlapi-parsers/srcs/owlapi-parsers-3.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

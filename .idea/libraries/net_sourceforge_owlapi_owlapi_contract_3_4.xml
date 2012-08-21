@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="net.sourceforge.owlapi_owlapi-contract_3.4">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/Tools/play/repository/cache/net.sourceforge.owlapi/owlapi-contract/jars/owlapi-contract-3.4.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Tools/play/repository/cache/net.sourceforge.owlapi/owlapi-contract/docs/owlapi-contract-3.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Tools/play/repository/cache/net.sourceforge.owlapi/owlapi-contract/srcs/owlapi-contract-3.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

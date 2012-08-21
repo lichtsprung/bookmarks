@@ -8,7 +8,7 @@ object ApplicationBuild extends Build {
     val appVersion      = "1.0-SNAPSHOT"
 
     val appDependencies = Seq(
-      "net.sourceforge.owlapi" % "owlapi-parent" % "3.3",
+      "net.sourceforge.owlapi" % "owlapi-distribution" % "3.4",
       "org.protege" % "protege-editor-owl" % "4.1.0",
       "org.apache.jena" % "jena-core" % "2.7.3"
     )

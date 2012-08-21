@@ -1,13 +1,9 @@
 <component name="libraryTable">
   <library name="javax.servlet_javax.servlet-api_3.0.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/javax.servlet/javax.servlet-api/jars/javax.servlet-api-3.0.1.jar!/" />
+      <root url="jar://$USER_HOME$/Tools/play/repository/local/javax.servlet/javax.servlet-api/3.0.1/jars/javax.servlet-api.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/javax.servlet/javax.servlet-api/docs/javax.servlet-api-3.0.1-javadoc.jar!/" />
-    </JAVADOC>
-    <SOURCES>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/javax.servlet/javax.servlet-api/srcs/javax.servlet-api-3.0.1-sources.jar!/" />
-    </SOURCES>
+    <JAVADOC />
+    <SOURCES />
   </library>
 </component>

@@ -2,6 +2,8 @@
 
 @import helper._
 
+<link rel="stylesheet" type="text/css" href="@routes.Assets.at("public/stylesheets/main.css")" />
+
 @main("Bookmark Manager") {
 <h1>@bookmarks.size Bookmark(s):</h1>
 
@@ -9,16 +11,16 @@
     @bookmarks.map{ bookmark =>
     <li>
         <div id="bookmark">
-            <div id="url"><a href=@bookmark.url>@bookmark.url</a></div>
-            <div id="docName">@bookmark.title</div>
-            <div id="author">@bookmark.author</div>
-            <div id="description">@bookmark.description</div>
-            <div id="tags">@bookmark.tags</div>
-            <div id="deleteBookmark">
+            <p id="url"><a href=@bookmark.url>@bookmark.url</a></p>
+            <p id="docName">@bookmark.title</p>
+            <p id="author">@bookmark.author</p>
+            <p id="description">@bookmark.description</p>
+            <p id="tags">@bookmark.tags</p>
+            <p id="deleteBookmark">
                 @form(routes.Application.deleteBookmark(bookmark.url)) {
                 <input type="submit" value="Delete">
                 }
-            </div>
+            </p>
         </div>
     </li>
     }
