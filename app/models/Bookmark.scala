@@ -35,10 +35,12 @@ object Bookmark {
       PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
       PREFIX plexus:<http://www.openplexus.net/documents#>
 
-      SELECT ?name
+      SELECT ?name ?url ?tag
       |WHERE {
       |  ?bookmark rdf:type plexus:Bookmark .
-      |  ?bookmark plexus:name ?name
+      |  ?bookmark plexus:name ?name .
+      |  ?bookmark plexus:url ?url .
+      |  ?bookmark plexus:tagged ?tag
       |}
     """.stripMargin
 
@@ -51,6 +53,8 @@ object Bookmark {
     val results = execution.execSelect()
 
     ResultSetFormatter.out(System.out, results, query)
+
+
     execution.close()
 
     bookmarks.toList
