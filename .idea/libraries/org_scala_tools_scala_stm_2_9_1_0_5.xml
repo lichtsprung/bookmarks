@@ -1,9 +1,13 @@
 <component name="libraryTable">
   <library name="org.scala-tools_scala-stm_2.9.1_0.5">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Tools/play/repository/local/org.scala-tools/scala-stm_2.9.1/0.5/jars/scala-stm_2.9.1.jar!/" />
+      <root url="jar://$USER_HOME$/Tools/play/repository/cache/org.scala-tools/scala-stm_2.9.1/jars/scala-stm_2.9.1-0.5.jar!/" />
     </CLASSES>
-    <JAVADOC />
-    <SOURCES />
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/Tools/play/repository/cache/org.scala-tools/scala-stm_2.9.1/docs/scala-stm_2.9.1-0.5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Tools/play/repository/cache/org.scala-tools/scala-stm_2.9.1/srcs/scala-stm_2.9.1-0.5-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>

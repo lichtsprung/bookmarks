@@ -7,32 +7,25 @@
 @main("Bookmark Manager") {
 <h1>@bookmarks.size Bookmark(s):</h1>
 
-<ul>
+
     @bookmarks.map{ bookmark =>
-    <li>
         <div id="bookmark">
             <p id="url"><a href=@bookmark.url>@bookmark.url</a></p>
-            <p id="docName">@bookmark.title</p>
-            <p id="author">@bookmark.author</p>
-            <p id="description">@bookmark.description</p>
+            <p id="docName">@bookmark.name</p>
             <p id="tags">@bookmark.tags</p>
             <p id="deleteBookmark">
                 @form(routes.Application.deleteBookmark(bookmark.url)) {
-                <input type="submit" value="Delete">
+                <input id="deleteButton"  type="submit" value="Delete">
                 }
             </p>
         </div>
-    </li>
-    }
-</ul>
+}
 
 <h2>New Bookmark</h2>
 
 @form(routes.Application.newBookmark){
 @inputText(bookmarkForm("url"))
-@inputText(bookmarkForm("title"))
-@inputText(bookmarkForm("author"))
-@inputText(bookmarkForm("description"))
+@inputText(bookmarkForm("name"))
 @inputText(bookmarkForm("tags"))
 <input type="submit" value="Create">
 }

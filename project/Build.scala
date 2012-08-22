@@ -10,7 +10,8 @@ object ApplicationBuild extends Build {
     val appDependencies = Seq(
       "net.sourceforge.owlapi" % "owlapi-distribution" % "3.4",
       "org.protege" % "protege-editor-owl" % "4.1.0",
-      "org.apache.jena" % "jena-core" % "2.7.3"
+      "org.apache.jena" % "jena-core" % "2.7.3",
+      "org.apache.jena" % "jena-arq" % "2.9.3"
     )
 
     val main = PlayProject(appName, appVersion, appDependencies, mainLang = SCALA).settings(

@@ -11,9 +11,7 @@ object Application extends Controller {
   val form = Form(
     mapping(
       "url" -> nonEmptyText,
-      "title" -> text,
-      "author" -> text,
-      "description" -> text,
+      "name" -> text,
       "tags" -> text
     )(Bookmark.apply)(Bookmark.unapply)
   )
@@ -31,7 +29,7 @@ object Application extends Controller {
       form.bindFromRequest.fold(
         hasErrors => BadRequest(views.html.index(Bookmark.all, hasErrors)),
         success => {
-          Bookmark.create(success.url, success.title, success.author, success.description, success.tags)
+          Bookmark.create(success.url, success.name, success.tags)
           Redirect(routes.Application.bookmarks)
         }
 

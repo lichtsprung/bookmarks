@@ -1,9 +1,11 @@
 <component name="libraryTable">
   <library name="net.sourceforge.cssparser_cssparser_0.9.5_test">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Tools/play/repository/local/net.sourceforge.cssparser/cssparser/0.9.5/jars/cssparser.jar!/" />
+      <root url="jar://$USER_HOME$/Tools/play/repository/cache/net.sourceforge.cssparser/cssparser/jars/cssparser-0.9.5.jar!/" />
     </CLASSES>
     <JAVADOC />
-    <SOURCES />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/Tools/play/repository/cache/net.sourceforge.cssparser/cssparser/srcs/cssparser-0.9.5-sources.jar!/" />
+    </SOURCES>
   </library>
 </component>
