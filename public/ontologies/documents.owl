@@ -11,34 +11,40 @@
 
 :Tag  a       owl:Class .
 
-:news
-      a       :Tag .
-
 :internet
       a       :Tag .
+
+:Bookmark_1474462806
+      a       :Bookmark ;
+      :isTaggedWith :internet , :search ;
+      :name   "Google, die internetsuchmaschine" ;
+      :url    "google.de" .
 
 :isTaggedWith
       a       owl:ObjectProperty ;
       rdfs:domain :Bookmark ;
       rdfs:range :Tag .
 
+:Bookmark_-662301420
+      a       :Bookmark ;
+      :isTaggedWith :shopping ;
+      :name   "amazon AG" ;
+      :url    "www.amazon.de" .
+
 :name
       a       owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
-:recherche
-      a       :Tag .
-
 :Bookmark
       a       owl:Class ;
       owl:disjointWith :Tag .
 
+:search
+      a       :Tag .
+
 <http://www.openplexus.net/documents>
       a       owl:Ontology .
 
-:Bookmark_-872438255
-      a       :Bookmark ;
-      :isTaggedWith :news , :internet , :recherche ;
-      :name   "Heise Nachrichten Magazin" ;
-      :url    "heise.de" .
+:shopping
+      a       :Tag .

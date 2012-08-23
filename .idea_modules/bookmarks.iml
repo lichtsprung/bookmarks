@@ -22,6 +22,7 @@
       <excludeFolder url="file://$MODULE_DIR$/../target/scala-2.9.1/cache" />
       <excludeFolder url="file://$MODULE_DIR$/../target/scala-2.9.1/classes" />
       <excludeFolder url="file://$MODULE_DIR$/../target/scala-2.9.1/classes_managed" />
+      <excludeFolder url="file://$MODULE_DIR$/../target/scala-2.9.1/test-classes" />
       <excludeFolder url="file://$MODULE_DIR$/../target/streams" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -64,6 +65,7 @@
     <orderEntry type="library" name="org.codehaus.jackson_jackson-core-asl_1.9.9" level="project" />
     <orderEntry type="library" name="org.codehaus.jackson_jackson-mapper-asl_1.9.9" level="project" />
     <orderEntry type="library" name="org.reflections_reflections_0.9.6" level="project" />
+    <orderEntry type="library" name="dom4j_dom4j_1.6.1" level="project" />
     <orderEntry type="library" name="javax.servlet_javax.servlet-api_3.0.1" level="project" />
     <orderEntry type="library" name="javax.transaction_jta_1.1" level="project" />
     <orderEntry type="library" name="tyrex_tyrex_1.0.1" level="project" />

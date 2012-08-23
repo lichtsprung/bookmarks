@@ -4,7 +4,6 @@ import collection.mutable.ListBuffer
 import java.io.{FileOutputStream, File}
 import com.hp.hpl.jena.rdf.model.ModelFactory
 import com.hp.hpl.jena.ontology.{OntModel, OntModelSpec}
-import com.hp.hpl.jena.query.{ResultSetFormatter, QueryExecutionFactory, QueryFactory}
 
 
 /**
@@ -36,14 +35,8 @@ object Bookmark {
 
 
   def all(): List[Bookmark] = {
-    val query = SparqlQueries.getInstancesOfResource(NS + "Bookmark")
-    val execution = QueryExecutionFactory.create(query, model)
-    val results = execution.execSelect()
-
-    ResultSetFormatter.out(System.out, results, query)
-    execution.close()
-
-    bookmarks.toList
+    val bookmarkList = SparqlQueries.getBookmarks(model)
+    bookmarkList
   }
 
   def create(url: String, name: String, tags: String) {
