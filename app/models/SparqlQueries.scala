@@ -1,6 +1,6 @@
 package models
 
-import com.hp.hpl.jena.query.{ResultSetFormatter, QueryExecutionFactory, QueryFactory}
+import com.hp.hpl.jena.query.{ParameterizedSparqlString, ResultSetFormatter, QueryExecutionFactory, QueryFactory}
 import com.hp.hpl.jena.ontology.OntModel
 import collection.mutable
 
