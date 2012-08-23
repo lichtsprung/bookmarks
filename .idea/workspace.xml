@@ -93,7 +93,7 @@
       <file leaf-file-name="SparqlQueries.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/SparqlQueries.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="48" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.07003891">
+            <state line="35" column="62" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.35019454">
               <folding />
             </state>
           </provider>
@@ -125,8 +125,8 @@
         <option value="$PROJECT_DIR$/app/views/index.scala.html" />
         <option value="$PROJECT_DIR$/project/Build.scala" />
         <option value="$PROJECT_DIR$/public/ontologies/documents.owl" />
-        <option value="$PROJECT_DIR$/app/models/SparqlQueries.scala" />
         <option value="$PROJECT_DIR$/app/models/Bookmark.scala" />
+        <option value="$PROJECT_DIR$/app/models/SparqlQueries.scala" />
       </list>
     </option>
   </component>
@@ -701,13 +701,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="29" selection-start="821" selection-end="821" vertical-scroll-proportion="-20.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/Tools/play/repository/cache/org.apache.jena/jena-arq/srcs/jena-arq-2.9.3-sources.jar!/com/hp/hpl/jena/query/QueryExecution.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="71" column="21" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.96303505">
@@ -748,9 +741,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="29" selection-start="821" selection-end="821" vertical-scroll-proportion="-20.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/SparqlQueries.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="48" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.07003891">
+        <state line="35" column="62" selection-start="1133" selection-end="1133" vertical-scroll-proportion="0.35019454">
           <folding />
         </state>
       </provider>

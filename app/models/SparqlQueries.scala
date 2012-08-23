@@ -32,8 +32,8 @@ object SparqlQueries {
       val r = results.next()
       val name = r.getLiteral("name").getString
       val tags = getTagsForBookmark(name, model)
-      val tagString = ""
-      tags.foreach(tag => tagString + " " +tag)
+      var tagString = ""
+      tags.foreach(tag => tagString = tagString + " " +tag.tag)
       val url = getURLForBookmark(name, model)
       bookmarks += Bookmark(url, name, tagString)
     }
