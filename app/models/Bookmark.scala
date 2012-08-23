@@ -12,49 +12,35 @@ import com.hp.hpl.jena.query.{ResultSetFormatter, QueryExecutionFactory, QueryFa
  */
 case class Bookmark(url: String, name: String, tags: String)
 
+case class Tag(tag: String)
 
 object Bookmark {
+
+  val base = "http://www.openplexus.net/documents"
+  val NS = base + "#"
 
   var bookmarks = ListBuffer[Bookmark]()
 
   val model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM_RULE_INF)
   loadOntologyTo(model)
 
-  val base = "http://www.openplexus.net/documents"
-  val NS = base + "#"
 
   val bookmarkClass = model.getOntClass(NS + "Bookmark")
+  val tagClass = model.getOntClass(NS + "Tag")
 
   val urlProperty = model.getDatatypeProperty(NS + "url")
+  val taggedProperty = model.getObjectProperty(NS + "isTaggedWith")
   val nameProperty = model.getDatatypeProperty(NS + "name")
-  val taggedProperty = model.getDatatypeProperty(NS + "tagged")
 
-  val queryAllBookmarks =
-    """
-      PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-      PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
-      PREFIX plexus:<http://www.openplexus.net/documents#>
-
-      SELECT ?name ?url ?tag
-      |WHERE {
-      |  ?bookmark rdf:type plexus:Bookmark .
-      |  ?bookmark plexus:name ?name .
-      |  ?bookmark plexus:url ?url .
-      |  ?bookmark plexus:tagged ?tag
-      |}
-    """.stripMargin
-
-  val query = QueryFactory.create(queryAllBookmarks)
 
 
 
   def all(): List[Bookmark] = {
+    val query = SparqlQueries.getInstancesOfResource(NS + "Bookmark")
     val execution = QueryExecutionFactory.create(query, model)
     val results = execution.execSelect()
 
     ResultSetFormatter.out(System.out, results, query)
-
-
     execution.close()
 
     bookmarks.toList
@@ -69,12 +55,14 @@ object Bookmark {
     val nameStatement = model.createStatement(newBookmark, nameProperty, name)
     model.add(nameStatement)
 
-    for (s <- tags.split(",")){
-      val taggedStatement = model.createStatement(newBookmark, taggedProperty, s.trim)
+
+    for (s <- tags.split(",")) {
+      val newTag = model.createIndividual(NS + s.trim, tagClass)
+      val taggedStatement = model.createStatement(newBookmark, taggedProperty, newTag)
       model.add(taggedStatement)
     }
 
-    //writeModel()
+    writeModel()
     bookmarks += Bookmark(url, name, tags)
   }
 
@@ -82,16 +70,11 @@ object Bookmark {
     bookmarks = bookmarks.filterNot(b => b.url.equalsIgnoreCase(url))
   }
 
-  private def writeModel(){
-    val writer = model.getWriter("RDF/XML")
-    writer.setProperty("showXmlDeclaration","true")
-    writer.setProperty("tab","4")
-    val out = new FileOutputStream("public/ontologies/documents.owl")
-    writer.write(model, out, base)
-    out.close()
+  private def writeModel() {
+    model.write(new FileOutputStream(new File("public/ontologies/documents.owl")), "TURTLE", base)
   }
 
-  private def loadOntologyTo(model: OntModel){
-    model.read(scala.io.Source.fromFile(new File("public/ontologies/documents.owl")).bufferedReader(), "RDF/XML")
+  private def loadOntologyTo(model: OntModel) {
+    model.read(scala.io.Source.fromFile(new File("public/ontologies/documents.owl")).bufferedReader(), base, "TURTLE")
   }
 }
