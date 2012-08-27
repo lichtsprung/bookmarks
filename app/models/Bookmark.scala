@@ -4,13 +4,22 @@ import collection.mutable.ListBuffer
 import java.io.{FileOutputStream, File}
 import com.hp.hpl.jena.rdf.model.ModelFactory
 import com.hp.hpl.jena.ontology.{OntModel, OntModelSpec}
+import collection.mutable
+import sun.awt.ScrollPaneWheelScroller
 
 
 /**
- * A Bookmark!
+ * A simple bookmark data representation
+ * @param url the url of the bookmark
+ * @param name the name of the bookmark
+ * @param tags the tags associated with the bookmark
  */
 case class Bookmark(url: String, name: String, tags: String)
 
+/**
+ *
+ * @param tag
+ */
 case class Tag(tag: String)
 
 object Bookmark {
@@ -32,11 +41,23 @@ object Bookmark {
   val nameProperty = model.getDatatypeProperty(NS + "name")
 
 
-
-
   def all(): List[Bookmark] = {
     val bookmarkList = SparqlQueries.getBookmarks(model)
+
+
+
     bookmarkList
+  }
+
+  def tagList() = {
+    val tags = SparqlQueries.getTags(model)
+    val map = mutable.HashMap[Tag, List[Bookmark]]()
+
+    tags.foreach(tag => {
+      val bookmarks = SparqlQueries.getBookmarksForTag(tag, model)
+      map += tag -> bookmarks.toList
+    })
+    map.toMap
   }
 
   def create(url: String, name: String, tags: String) {

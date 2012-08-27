@@ -1,16 +1,27 @@
-body{
+body {
     padding-left: 100px;
 }
 
-#bookmark{
-    background-color:#b0c4de;
+#bookmark {
+    background-color: #b0c4de;
     width: 400px;
-    border:2px solid;
-    border-radius:25px;
+    border: 2px solid;
+    border-radius: 25px;
     padding-left: 10px;
+    margin-top: 10px;
     text-align: left;
 }
 
-#deleteButton{
-    text-align: left;
+#deleteButton {
+    margin-left: 80%;
+}
+
+#left {
+    width: 50%;
+    float: left;
+}
+
+#right {
+    width: 50%;
+    float: right;
 }

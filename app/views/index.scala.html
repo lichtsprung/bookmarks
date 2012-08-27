@@ -1,32 +1,45 @@
-@(bookmarks: List[Bookmark], bookmarkForm: Form[Bookmark])
+@(bookmarks: List[Bookmark], bookmarkForm: Form[Bookmark], tags: Map[Tag, List[Bookmark]])
 
 @import helper._
 
 <link rel="stylesheet" type="text/css" href="@routes.Assets.at("public/stylesheets/main.css")" />
 
 @main("Bookmark Manager") {
-<h1>@bookmarks.size Bookmark(s):</h1>
+    <div id="left">
+        <h1>@bookmarks.size Bookmark(s):</h1>
 
 
-    @bookmarks.map{ bookmark =>
+        @bookmarks.map{ bookmark =>
         <div id="bookmark">
             <p id="url"><a href=@bookmark.url>@bookmark.url</a></p>
             <p id="docName">@bookmark.name</p>
             <p id="tags">@bookmark.tags</p>
             <p id="deleteBookmark">
                 @form(routes.Application.deleteBookmark(bookmark.url)) {
-                <input id="deleteButton"  type="submit" value="Delete">
+                    <input id="deleteButton"  type="submit" value="Delete">
                 }
             </p>
         </div>
-}
+        }
 
-<h2>New Bookmark</h2>
+        <h2>New Bookmark</h2>
 
-@form(routes.Application.newBookmark){
-@inputText(bookmarkForm("url"))
-@inputText(bookmarkForm("name"))
-@inputText(bookmarkForm("tags"))
-<input type="submit" value="Create">
-}
+        @form(routes.Application.newBookmark){
+            @inputText(bookmarkForm("url"))
+            @inputText(bookmarkForm("name"))
+            @inputText(bookmarkForm("tags"))
+            <input type="submit" value="Create">
+        }
+    </div>
+
+    <div id="right">
+        @tags.map{ entry =>
+            <div id="bytag">
+                @entry._1.tag
+                <div id="bytagsites">
+                    <p>@entry._2</p>
+                </div>
+            </div>
+        }
+    </div>
 }
