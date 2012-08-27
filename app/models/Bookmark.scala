@@ -44,7 +44,14 @@ object Bookmark {
   def all(): List[Bookmark] = {
     val bookmarkList = SparqlQueries.getBookmarks(model)
 
+    val r = tagList()
 
+    r.foreach(entry => {
+      println(entry._1.tag)
+      entry._2.foreach(bookmark =>{
+        println("     " + bookmark.name)
+      })
+    })
 
     bookmarkList
   }

@@ -36,9 +36,12 @@
         @tags.map{ entry =>
             <div id="bytag">
                 @entry._1.tag
-                <div id="bytagsites">
-                    <p>@entry._2</p>
+                <div>
+                    @entry._2.map{ bookmark =>
+                       <span><a href=@bookmark.url>@bookmark.name</a></span>
+                    }
                 </div>
+
             </div>
         }
     </div>

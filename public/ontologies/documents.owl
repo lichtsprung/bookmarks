@@ -14,16 +14,14 @@
 :internet
       a       :Tag .
 
+:news
+      a       :Tag .
+
 :Bookmark_1474462806
       a       :Bookmark ;
       :isTaggedWith :internet , :search ;
       :name   "Google, die internetsuchmaschine" ;
       :url    "google.de" .
-
-:isTaggedWith
-      a       owl:ObjectProperty ;
-      rdfs:domain :Bookmark ;
-      rdfs:range :Tag .
 
 :Bookmark_-662301420
       a       :Bookmark ;
@@ -35,6 +33,23 @@
       a       owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
+
+:Bookmark_-934140792
+      a       :Bookmark ;
+      :isTaggedWith :internet , :news ;
+      :name   "Heise Nachrichten Magazin" ;
+      :url    "www.heise.de" .
+
+:Bookmark_-9202738
+      a       :Bookmark ;
+      :isTaggedWith :internet , :news ;
+      :name   "Focus Magazin" ;
+      :url    "www.focus.de" .
+
+:isTaggedWith
+      a       owl:ObjectProperty ;
+      rdfs:domain :Bookmark ;
+      rdfs:range :Tag .
 
 :Bookmark
       a       owl:Class ;
