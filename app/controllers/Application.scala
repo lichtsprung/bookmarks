@@ -41,4 +41,8 @@ object Application extends Controller {
     Redirect(routes.Application.bookmarks)
   }
 
+  def tagDetails(tag: String) = Action{
+    Ok(views.html.index(Bookmark.forTag(tag), form, Bookmark.tagList))
+  }
+
 }

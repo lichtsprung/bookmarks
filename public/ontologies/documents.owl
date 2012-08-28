@@ -9,42 +9,51 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
+:Bookmark_-1861887696
+      a       :Bookmark ;
+      :isTaggedWith :hamburg , :news , :internet ;
+      :name   "Zeit" ;
+      :url    "http://www.zeit.de" .
+
 :Tag  a       owl:Class .
 
-:internet
+:gaming
       a       :Tag .
 
 :news
       a       :Tag .
 
-:Bookmark_1474462806
-      a       :Bookmark ;
-      :isTaggedWith :internet , :search ;
-      :name   "Google, die internetsuchmaschine" ;
-      :url    "google.de" .
+:internet
+      a       :Tag .
 
-:Bookmark_-662301420
-      a       :Bookmark ;
-      :isTaggedWith :shopping ;
-      :name   "amazon AG" ;
-      :url    "www.amazon.de" .
+:development
+      a       :Tag .
 
 :name
       a       owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
-:Bookmark_-934140792
-      a       :Bookmark ;
-      :isTaggedWith :internet , :news ;
-      :name   "Heise Nachrichten Magazin" ;
-      :url    "www.heise.de" .
+:blog
+      a       :Tag .
 
-:Bookmark_-9202738
+:Bookmark_892240706
       a       :Bookmark ;
-      :isTaggedWith :internet , :news ;
-      :name   "Focus Magazin" ;
-      :url    "www.focus.de" .
+      :isTaggedWith :gaming , :internet ;
+      :name   "Gamestar" ;
+      :url    "www.gamestar.de" .
+
+:recherche
+      a       :Tag .
+
+:scala
+      a       :Tag .
+
+:java
+      a       :Tag .
+
+:hamburg
+      a       :Tag .
 
 :isTaggedWith
       a       owl:ObjectProperty ;
@@ -57,6 +66,12 @@
 
 :search
       a       :Tag .
+
+:Bookmark_1885128675
+      a       :Bookmark ;
+      :isTaggedWith :news , :internet , :recherche ;
+      :name   "Spiegel.de" ;
+      :url    "www.spiegel.de" .
 
 <http://www.openplexus.net/documents>
       a       owl:Ontology .

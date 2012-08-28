@@ -1,11 +1,9 @@
 package models
 
-import collection.mutable.ListBuffer
 import java.io.{FileOutputStream, File}
 import com.hp.hpl.jena.rdf.model.ModelFactory
 import com.hp.hpl.jena.ontology.{OntModel, OntModelSpec}
 import collection.mutable
-import sun.awt.ScrollPaneWheelScroller
 
 
 /**
@@ -17,20 +15,21 @@ import sun.awt.ScrollPaneWheelScroller
 case class Bookmark(url: String, name: String, tags: String)
 
 /**
- *
- * @param tag
+ * A simple tag representation
+ * @param tag the tag
  */
 case class Tag(tag: String)
 
+/**
+ * Bookmark Object
+ */
 object Bookmark {
 
   val base = "http://www.openplexus.net/documents"
   val NS = base + "#"
 
-  var bookmarks = ListBuffer[Bookmark]()
-
   val model = ModelFactory.createOntologyModel(OntModelSpec.OWL_DL_MEM_RULE_INF)
-  loadOntologyTo(model)
+  loadOntology(model)
 
 
   val bookmarkClass = model.getOntClass(NS + "Bookmark")
@@ -43,16 +42,6 @@ object Bookmark {
 
   def all(): List[Bookmark] = {
     val bookmarkList = SparqlQueries.getBookmarks(model)
-
-    val r = tagList()
-
-    r.foreach(entry => {
-      println(entry._1.tag)
-      entry._2.foreach(bookmark =>{
-        println("     " + bookmark.name)
-      })
-    })
-
     bookmarkList
   }
 
@@ -84,18 +73,27 @@ object Bookmark {
     }
 
     writeModel()
-    bookmarks += Bookmark(url, name, tags)
+  }
+
+  /**
+   * Returns all bookmarks that were tagged with a specific tag.
+   * @param tag the tag
+   * @return a List of Bookmarks that were tagged with "Tag"
+   */
+  def forTag(tag: String) = {
+    SparqlQueries.getBookmarksForTag(Tag(tag), model)
   }
 
   def delete(url: String) {
-    bookmarks = bookmarks.filterNot(b => b.url.equalsIgnoreCase(url))
+    SparqlQueries.deleteBookmark(url, model)
+    writeModel()
   }
 
   private def writeModel() {
     model.write(new FileOutputStream(new File("public/ontologies/documents.owl")), "TURTLE", base)
   }
 
-  private def loadOntologyTo(model: OntModel) {
+  private def loadOntology(model: OntModel) {
     model.read(scala.io.Source.fromFile(new File("public/ontologies/documents.owl")).bufferedReader(), base, "TURTLE")
   }
 }

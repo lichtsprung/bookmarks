@@ -9,6 +9,7 @@ GET     /                           controllers.Application.index
 GET /bookmarks  controllers.Application.bookmarks
 POST /bookmarks controllers.Application.newBookmark
 POST /bookmarks/:url/delete  controllers.Application.deleteBookmark(url: String)
+GET /bookmarks/:tag    controllers.Application.tagDetails(tag: String)
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

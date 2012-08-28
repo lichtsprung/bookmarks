@@ -11,7 +11,7 @@
 
         @bookmarks.map{ bookmark =>
         <div id="bookmark">
-            <p id="url"><a href=@bookmark.url>@bookmark.url</a></p>
+            <p id="url"><a href="@bookmark.url">@bookmark.url</a></p>
             <p id="docName">@bookmark.name</p>
             <p id="tags">@bookmark.tags</p>
             <p id="deleteBookmark">
@@ -35,13 +35,7 @@
     <div id="right">
         @tags.map{ entry =>
             <div id="bytag">
-                @entry._1.tag
-                <div>
-                    @entry._2.map{ bookmark =>
-                       <span id="bookmarkTagURL"><a href=@bookmark.url>@bookmark.name</a><br /></span>
-                    }
-                </div>
-
+                <a href="@routes.Application.tagDetails(entry._1.tag)">@entry._1.tag (@entry._2.size)</a>
             </div>
         }
     </div>
