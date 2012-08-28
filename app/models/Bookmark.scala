@@ -12,7 +12,7 @@ import collection.mutable
  * @param name the name of the bookmark
  * @param tags the tags associated with the bookmark
  */
-case class Bookmark(url: String, name: String, tags: String)
+case class Bookmark(url: String, name: String, tags: String, id: String)
 
 /**
  * A simple tag representation
@@ -38,6 +38,7 @@ object Bookmark {
   val urlProperty = model.getDatatypeProperty(NS + "url")
   val taggedProperty = model.getObjectProperty(NS + "isTaggedWith")
   val nameProperty = model.getDatatypeProperty(NS + "name")
+  val idProperty = model.getDatatypeProperty(NS + "id")
 
 
   def all(): List[Bookmark] = {
@@ -64,7 +65,8 @@ object Bookmark {
     model.add(urlStatement)
     val nameStatement = model.createStatement(newBookmark, nameProperty, name)
     model.add(nameStatement)
-
+    val idStatement = model.createStatement(newBookmark, idProperty, url.hashCode().toString)
+    model.add(idStatement)
 
     for (s <- tags.split(",")) {
       val newTag = model.createIndividual(NS + s.trim, tagClass)
@@ -84,8 +86,8 @@ object Bookmark {
     SparqlQueries.getBookmarksForTag(Tag(tag), model)
   }
 
-  def delete(url: String) {
-    SparqlQueries.deleteBookmark(url, model)
+  def delete(hash: String) {
+    SparqlQueries.deleteBookmark(hash, model)
     writeModel()
   }
 
@@ -96,4 +98,6 @@ object Bookmark {
   private def loadOntology(model: OntModel) {
     model.read(scala.io.Source.fromFile(new File("public/ontologies/documents.owl")).bufferedReader(), base, "TURTLE")
   }
+
+  def apply(url: String, name: String, tags: String):Bookmark = apply(url, name, tags, Integer.toString(url.hashCode))
 }

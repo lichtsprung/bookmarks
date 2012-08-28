@@ -13,7 +13,7 @@ object Application extends Controller {
       "url" -> nonEmptyText,
       "name" -> text,
       "tags" -> text
-    )(Bookmark.apply)(Bookmark.unapply)
+    )(Bookmark.apply)((bookmark: Bookmark) => (Some(bookmark.url, bookmark.name, bookmark.tags)))
   )
 
   def index = Action {
@@ -36,12 +36,12 @@ object Application extends Controller {
       )
   }
 
-  def deleteBookmark(url: String) = Action {
-    Bookmark.delete(url)
+  def deleteBookmark(urlHash: String) = Action {
+    Bookmark.delete(urlHash)
     Redirect(routes.Application.bookmarks)
   }
 
-  def tagDetails(tag: String) = Action{
+  def tagDetails(tag: String) = Action {
     Ok(views.html.index(Bookmark.forTag(tag), form, Bookmark.tagList))
   }
 

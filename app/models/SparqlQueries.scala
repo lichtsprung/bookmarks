@@ -129,7 +129,7 @@ object SparqlQueries {
     tags.toList
   }
 
-  def deleteBookmark(url: String, model: OntModel){
+  def deleteBookmark(id: String, model: OntModel){
     val query =
       """
         |PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -138,9 +138,9 @@ object SparqlQueries {
         |SELECT ?bookmark
         |WHERE{
         | ?bookmark rdf:type plexus:Bookmark .
-        | ?bookmark plexus:url URL
+        | ?bookmark plexus:id URL
         |}
-      """.stripMargin.replaceAllLiterally("URL", "\"" + url + "\"")
+      """.stripMargin.replaceAllLiterally("URL", "\"" + id + "\"")
 
     val jenaQuery = QueryFactory.create(query)
     val execution = QueryExecutionFactory.create(jenaQuery,model)

@@ -9,24 +9,15 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
-:Bookmark_-1861887696
-      a       :Bookmark ;
-      :isTaggedWith :hamburg , :news , :internet ;
-      :name   "Zeit" ;
-      :url    "http://www.zeit.de" .
-
-:Tag  a       owl:Class .
-
 :gaming
       a       :Tag .
 
-:news
-      a       :Tag .
+:Tag  a       owl:Class .
 
 :internet
       a       :Tag .
 
-:development
+:news
       a       :Tag .
 
 :name
@@ -34,26 +25,12 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
-:blog
-      a       :Tag .
-
-:Bookmark_892240706
-      a       :Bookmark ;
-      :isTaggedWith :gaming , :internet ;
-      :name   "Gamestar" ;
-      :url    "www.gamestar.de" .
-
 :recherche
       a       :Tag .
 
-:scala
-      a       :Tag .
-
-:java
-      a       :Tag .
-
-:hamburg
-      a       :Tag .
+:id   a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain :Bookmark ;
+      rdfs:range xsd:string .
 
 :isTaggedWith
       a       owl:ObjectProperty ;
@@ -64,17 +41,18 @@
       a       owl:Class ;
       owl:disjointWith :Tag .
 
-:search
+:programming
       a       :Tag .
 
-:Bookmark_1885128675
-      a       :Bookmark ;
-      :isTaggedWith :news , :internet , :recherche ;
-      :name   "Spiegel.de" ;
-      :url    "www.spiegel.de" .
+:search
+      a       :Tag .
 
 <http://www.openplexus.net/documents>
       a       owl:Ontology .
 
-:shopping
-      a       :Tag .
+:Bookmark_1688356922
+      a       :Bookmark ;
+      :id     "1688356922" ;
+      :isTaggedWith :programming ;
+      :name   "DZone" ;
+      :url    "http://www.dzone.com" .

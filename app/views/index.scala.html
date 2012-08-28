@@ -15,7 +15,7 @@
             <p id="docName">@bookmark.name</p>
             <p id="tags">@bookmark.tags</p>
             <p id="deleteBookmark">
-                @form(routes.Application.deleteBookmark(bookmark.url)) {
+                @form(routes.Application.deleteBookmark(bookmark.id)) {
                     <input id="deleteButton"  type="submit" value="Delete">
                 }
             </p>

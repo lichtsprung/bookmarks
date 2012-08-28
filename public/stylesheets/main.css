@@ -1,15 +1,28 @@
 body {
     padding-left: 100px;
+    font-family: sans-serif;
 }
 
 #bookmark {
-    background-color: #b0c4de;
+    background-color: #6e808e;
     width: 400px;
-    border: 2px solid;
-    border-radius: 25px;
+    border: 1px solid;
+    border-radius: 5px;
     padding-left: 10px;
     margin-top: 10px;
     text-align: left;
+}
+
+#url a {
+    text-decoration: none;
+    color:#EBEBEB;
+}
+
+#url {
+    margin-right: 5%;
+    text-align: right;
+    border-bottom: 1px solid;
+    color: #EBEBEB;
 }
 
 #deleteButton {
@@ -27,6 +40,6 @@ body {
     float: right;
 }
 
-#bookmarkTagURL{
+#bookmarkTagURL {
     padding-left: 10%;
 }
