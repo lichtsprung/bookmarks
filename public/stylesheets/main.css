@@ -4,7 +4,7 @@ body {
 }
 
 #bookmark {
-    background-color: #6e808e;
+    background-color: #E6E6E6;
     width: 400px;
     border: 1px solid;
     border-radius: 5px;
@@ -13,17 +13,16 @@ body {
     text-align: left;
 }
 
-#url a {
+#urlheader a {
     text-decoration: none;
-    color:#EBEBEB;
+    color:#222222;
 }
 
-#url {
-    margin-right: 5%;
+#urlheader{
     text-align: right;
-    border-bottom: 1px solid;
-    color: #EBEBEB;
+    margin-right: 10px;
 }
+
 
 #deleteButton {
     margin-left: 80%;

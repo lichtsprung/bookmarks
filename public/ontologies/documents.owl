@@ -9,10 +9,10 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
+:Tag  a       owl:Class .
+
 :gaming
       a       :Tag .
-
-:Tag  a       owl:Class .
 
 :internet
       a       :Tag .
@@ -27,6 +27,13 @@
 
 :recherche
       a       :Tag .
+
+:Bookmark_1105871770
+      a       :Bookmark ;
+      :id     "1105871770" ;
+      :isTaggedWith :internet , :news ;
+      :name   "Heise Nachrichten Magazin" ;
+      :url    "http://www.heise.de" .
 
 :id   a       owl:FunctionalProperty , owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
