@@ -25,3 +25,7 @@ body {
     width: 50%;
     float: right;
 }
+
+#bookmarkTagURL{
+    padding-left: 10%;
+}
