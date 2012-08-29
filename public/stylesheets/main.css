@@ -1,14 +1,25 @@
 body {
     padding-left: 100px;
+    padding-right: 100px;
     font-family: sans-serif;
+}
+
+h1{
+    background-color: #6e808e;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 30px;
 }
 
 #bookmark {
     background-color: #E6E6E6;
-    width: 400px;
+    width: 90%;
     border: 1px solid;
     border-radius: 5px;
     padding-left: 10px;
+    margin-left: 10px;
     margin-top: 10px;
     text-align: left;
 }
@@ -18,11 +29,12 @@ body {
     color:#222222;
 }
 
-#urlheader{
+#docname{
     text-align: right;
+    border-bottom: 1px solid;
     margin-right: 10px;
+    padding-bottom: 5px;
 }
-
 
 #deleteButton {
     margin-left: 80%;
@@ -34,7 +46,7 @@ body {
 }
 
 #right {
-    padding-top: 100px;
+    padding-top: 80px;
     width: 50%;
     float: right;
 }

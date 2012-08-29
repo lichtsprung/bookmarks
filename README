@@ -1,4 +1,8 @@
-This is your new Play 2.0 application
+Bookmark Manager
 =====================================
 
-This file will be packaged with your application, when using `play dist`.
+TODOS:
+- Websites sollten beim Hinzufügen indiziert werden
+- Index wird benutzt, um Suchen und automatisches Tagging zu ermöglichen
+- Tagging über Gewichtung der Terme auf der Seite in Bezug auf das Gewicht im Index
+    - LSA?
