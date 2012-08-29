@@ -6,3 +6,4 @@ TODOS:
 - Index wird benutzt, um Suchen und automatisches Tagging zu ermöglichen
 - Tagging über Gewichtung der Terme auf der Seite in Bezug auf das Gewicht im Index
     - LSA?
+- Tagvorschläge auf Basis der Tags, die schon vergeben wurden
