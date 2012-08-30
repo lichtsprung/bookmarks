@@ -10,24 +10,24 @@ object Application extends Controller {
 
   val form = Form(
     mapping(
-      "url" -> nonEmptyText,
+      "url" -> text,
       "name" -> text,
       "tags" -> text
     )(Bookmark.apply)((bookmark: Bookmark) => (Some(bookmark.url, bookmark.name, bookmark.tags)))
   )
 
   def index = Action {
-    Redirect(routes.Application.bookmarks)
+    Ok(views.html.index())
   }
 
-  def bookmarks = Action {
-    Ok(views.html.index(Bookmark.all, form, Bookmark.tagList))
+  def bookmark = Action {
+    Ok(views.html.newBookmark(form))
   }
 
   def newBookmark = Action {
     implicit request =>
       form.bindFromRequest.fold(
-        hasErrors => BadRequest(views.html.index(Bookmark.all, hasErrors, Bookmark.tagList)),
+        hasErrors => BadRequest(views.html.index()),
         success => {
           Bookmark.create(success.url, success.name, success.tags)
           Redirect(routes.Application.bookmarks)
@@ -36,13 +36,18 @@ object Application extends Controller {
       )
   }
 
+  def bookmarks = Action {
+    Ok(views.html.index())
+  }
+
+
   def deleteBookmark(urlHash: String) = Action {
     Bookmark.delete(urlHash)
     Redirect(routes.Application.bookmarks)
   }
 
   def tagDetails(tag: String) = Action {
-    Ok(views.html.index(Bookmark.forTag(tag), form, Bookmark.tagList))
+    Ok(views.html.index())
   }
 
 }

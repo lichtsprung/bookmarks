@@ -1,62 +1,20 @@
-@(bookmarks: List[Bookmark], bookmarkForm: Form[Bookmark], tags: Map[Tag, List[Bookmark]])
+@()
 
 @import helper._
 
 <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/main.css")" />
-<link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/smoothness/jquery-ui.css")" />
-<script src="@routes.Assets.at("javascripts/jquery-1.8.0.js")"></script>
-<script src="@routes.Assets.at("javascripts/ui/jquery.effects.core.js")"></script>
-<script src="@routes.Assets.at("javascripts/ui/jquery.ui.widget.js")"></script>
-<script src="@routes.Assets.at("javascripts/ui/jquery.ui.mouse.js")"></script>
-<script src="@routes.Assets.at("javascripts/ui/jquery.ui.resizable.js")"></script>
-<script src="@routes.Assets.at("javascripts/ui/jquery.ui.accordion.js")"></script>
 
-<script>
-    $(function() {
-        $( "#accordion" ).accordion();
-    });
-</script>
 
 
 @main("Bookmark Manager") {
-    <div id="left">
-        <h1>@bookmarks.size Bookmark(s):</h1>
-
-
-        @bookmarks.map{ bookmark =>
-        <div id="bookmark">
-            <p id="docName">@bookmark.name</p>
-            <p id="urlheader"><a href="@bookmark.url">@bookmark.url</a></p>
-            <p id="tags">@bookmark.tags</p>
-            <p id="deleteBookmark">
-                @form(routes.Application.deleteBookmark(bookmark.id)) {
-                <input id="deleteButton"  type="submit" value="Delete">
-                }
-            </p>
-        </div>
-        }
-
-        <h2>New Bookmark</h2>
-
-        @form(routes.Application.newBookmark){
-            @inputText(bookmarkForm("url"))
-            @inputText(bookmarkForm("name"))
-            @inputText(bookmarkForm("tags"))
-            <input type="submit" value="Create">
-        }
-    </div>
-
-    <div id="right">
-        <div id="accordion">
-
-            @tags.map{ entry =>
-                <h3><a href="#">@entry._1.tag</a> </h3>
-                <div>
-                    @entry._2.map{ bookmark =>
-                        <p>@bookmark.name</p>
-                    }
-                </div>
-            }
-        </div>
-    </div>
+       <div id="choice">
+           <div id="left"><div id="textNew">
+               <a href="@routes.Application.bookmark()">New</a>
+           </div> </div>
+           <div id="right">
+               <div id="textAll">
+                   <a href="@routes.Application.bookmarks()">All</a>
+               </div>
+           </div>
+       </div>
 }
