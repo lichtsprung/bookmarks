@@ -3,9 +3,16 @@
     float: left;
     width: 200px;
     height: 90px;
-    border-radius: 10px;
+
     border: 1px solid;
-    border-color: #555555;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    -moz-box-shadow: 0px 0px 10px #000000;
+    -webkit-box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0px 0px 10px #000000;
+    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
     margin-right: 5px;
 
     background: rgb(205, 235, 142);
@@ -27,8 +34,14 @@
 
     margin-left: 5px;
     border: 1px solid;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
     border-radius: 10px;
-    border-color: #555555;
+    /*IE 7 AND 8 DO NOT SUPPORT BORDER RADIUS*/
+    -moz-box-shadow: 0px 0px 10px #000000;
+    -webkit-box-shadow: 0px 0px 10px #000000;
+    box-shadow: 0px 0px 10px #000000;
+    /*IE 7 AND 8 DO NOT SUPPORT BLUR PROPERTY OF SHADOWS*/
     background: rgb(195, 217, 255);
     background: -moz-radial-gradient(center, ellipse cover, rgba(195, 217, 255, 1) 0%, rgba(177, 200, 239, 1) 41%, rgba(152, 176, 217, 1) 100%);
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(195, 217, 255, 1)), color-stop(41%, rgba(177, 200, 239, 1)), color-stop(100%, rgba(152, 176, 217, 1)));

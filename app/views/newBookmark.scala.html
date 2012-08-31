@@ -1,14 +1,17 @@
 @(bookmarkForm: Form[Bookmark])
 
 @import helper._
+@import helper.twitterBootstrap._
 
 <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/newBookmark.css")" />
 
 @main("Add Bookmark"){
-    <div id="bookmarkBox">
-        @form(routes.Application.newBookmark){
-            @inputText(bookmarkForm("url"))
 
-        }
-    </div>
+    @form(action = routes.Application.newBookmark, 'id -> "addBookmark", 'class -> "inputs", 'args -> "autofocus"){
+        <h1>New Bookmark</h1>
+        @inputText(bookmarkForm("url"), '_label -> "", 'placeholder -> "URL")
+        @inputText(bookmarkForm("name"),'_label -> "", 'placeholder -> "Name")
+        @inputText(bookmarkForm("tags"),'_label -> "", 'placeholder -> "Tags")
+        <input id="submit" type="submit" value="Create">
+    }
 }

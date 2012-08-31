@@ -9,21 +9,28 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
-:Tag  a       owl:Class .
-
 :gaming
       a       :Tag .
 
-:internet
-      a       :Tag .
+:Tag  a       owl:Class .
 
 :news
+      a       :Tag .
+
+:internet
       a       :Tag .
 
 :name
       a       owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
+
+:Bookmark_892240706
+      a       :Bookmark ;
+      :id     "892240706" ;
+      :isTaggedWith :news , :internet , :recherche ;
+      :name   "Heise Nachrichten Magazin" ;
+      :url    "http://www.gamestar.de" .
 
 :recherche
       a       :Tag .
@@ -54,8 +61,22 @@
 :search
       a       :Tag .
 
+:Bookmark_1885128675
+      a       :Bookmark ;
+      :id     "1885128675" ;
+      :isTaggedWith :gaming ;
+      :name   "Heise Nachrichten Magazin" ;
+      :url    "http://www.spiegel.de" .
+
 <http://www.openplexus.net/documents>
       a       owl:Ontology .
+
+:Bookmark_-872438255
+      a       :Bookmark ;
+      :id     "-872438255" ;
+      :isTaggedWith :gaming ;
+      :name   "Spiegel AG" ;
+      :url    "heise.de" .
 
 :Bookmark_1688356922
       a       :Bookmark ;

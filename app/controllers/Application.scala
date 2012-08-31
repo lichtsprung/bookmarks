@@ -27,7 +27,8 @@ object Application extends Controller {
   def newBookmark = Action {
     implicit request =>
       form.bindFromRequest.fold(
-        hasErrors => BadRequest(views.html.index()),
+        hasErrors => {
+          BadRequest(views.html.index())},
         success => {
           Bookmark.create(success.url, success.name, success.tags)
           Redirect(routes.Application.bookmarks)

@@ -58,7 +58,7 @@ object Bookmark {
   }
 
   def create(url: String, name: String, tags: String) {
-
+    println("adding url: " + url)
     val newBookmark = model.createIndividual(NS + "Bookmark_" + url.hashCode(), bookmarkClass)
 
     val urlStatement = model.createStatement(newBookmark, urlProperty, url)
