@@ -23,7 +23,7 @@ body {
     background-image: -o-linear-gradient(top, #fff, #eee);
     background-image: linear-gradient(top, #fff, #eee);
     height: 300px;
-    width: 600px;
+    width: 530px;
     margin: -150px 0 0 -230px;
     padding: 30px;
     position: absolute;
@@ -93,18 +93,7 @@ h1:before {
     left: 0;
 }
 
-.inputs input {
-    padding: 15px 15px 15px 30px;
-    margin: 0 0 10px 0;
-    width: 600px; /* 353 + 2 + 45 = 400 */
-    border: 1px solid #ccc;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -moz-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
-    -webkit-box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
-    box-shadow: 0 1px 1px #ccc inset, 0 1px 0 #fff;
-}
+
 
 .inputs input:focus {
     background-color: #fff;
@@ -175,6 +164,10 @@ h1:before {
 #submit::-moz-focus-inner
 {
     border: none;
+}
+
+#url, #name, #tags {
+    height: 30px;
 }
 
 
