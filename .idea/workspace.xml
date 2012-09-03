@@ -2,115 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c30ee9c-5af5-4bf9-b3f1-a578b5888a78" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ontologies/documents.owl" afterPath="$PROJECT_DIR$/public/ontologies/documents.owl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/cglib_cglib_nodep_2_1_3_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/cglib_cglib_nodep_2_1_3_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/ch_qos_logback_logback_classic_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/ch_qos_logback_logback_classic_1_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/ch_qos_logback_logback_core_1_0_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/ch_qos_logback_logback_core_1_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_codahale_jerkson_2_9_1_0_5_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_codahale_jerkson_2_9_1_0_5_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_jsuereth_scala_arm_scala_arm_2_9_1_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_jsuereth_scala_arm_scala_arm_2_9_1_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_scala_incubator_io_scala_io_core_2_9_1_0_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_scala_incubator_io_scala_io_core_2_9_1_0_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_github_scala_incubator_io_scala_io_file_2_9_1_0_4_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_github_scala_incubator_io_scala_io_file_2_9_1_0_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_google_code_findbugs_jsr305_1_3_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_google_guava_guava_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_google_guava_guava_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_h2database_h2_1_3_158.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_h2database_h2_1_3_158.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_jolbox_bonecp_0_7_1_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_jolbox_bonecp_0_7_1_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_ning_async_http_client_1_7_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_ning_async_http_client_1_7_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_novocode_junit_interface_0_8_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_novocode_junit_interface_0_8_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_typesafe_akka_akka_actor_2_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_typesafe_akka_akka_actor_2_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/com_typesafe_akka_akka_slf4j_2_0_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/com_typesafe_akka_akka_slf4j_2_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_codec_commons_codec_1_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_codec_commons_codec_1_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_collections_commons_collections_3_2_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_collections_commons_collections_3_2_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_io_commons_io_2_0_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_io_commons_io_2_0_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_lang_commons_lang_2_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang_commons_lang_2_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_logging_commons_logging_1_1_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_logging_commons_logging_1_1_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/dom4j_dom4j_1_6_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/dom4j_dom4j_1_6_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/io_netty_netty_3_5_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/io_netty_netty_3_5_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/javassist_javassist_3_12_1_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/javassist_javassist_3_12_1_GA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/javax_servlet_javax_servlet_api_3_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_javax_servlet_api_3_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/javax_transaction_jta_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/javax_transaction_jta_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/javax_validation_validation_api_1_0_0_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/javax_validation_validation_api_1_0_0_GA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/jaxen_jaxen_1_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/jaxen_jaxen_1_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/joda_time_joda_time_2_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/joda_time_joda_time_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_8_2_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/junit_junit_4_8_2_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/log4j_log4j_1_2_16.xml" afterPath="$PROJECT_DIR$/.idea/libraries/log4j_log4j_1_2_16.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_java_dev_jna_jna_3_4_0_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_java_dev_jna_jna_3_4_0_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_java_dev_jna_platform_3_4_0_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_java_dev_jna_platform_3_4_0_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_sf_ehcache_ehcache_core_2_5_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_sf_ehcache_ehcache_core_2_5_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_cssparser_cssparser_0_9_5_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_cssparser_cssparser_0_9_5_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_htmlunit_htmlunit_2_9_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_htmlunit_htmlunit_2_9_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_htmlunit_htmlunit_core_js_2_9_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_htmlunit_htmlunit_core_js_2_9_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_nekohtml_nekohtml_1_9_15_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_nekohtml_nekohtml_1_9_15_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_api_3_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_api_3_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_apibinding_3_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_apibinding_3_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_contract_3_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_contract_3_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_distribution_3_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_distribution_3_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_impl_3_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_impl_3_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_parsers_3_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_parsers_3_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_tools_3_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/net_sourceforge_owlapi_owlapi_tools_3_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/oauth_signpost_signpost_core_1_2_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/oauth_signpost_signpost_core_1_2_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_exec_1_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_commons_commons_exec_1_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_httpcomponents_httpclient_4_1_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_httpcomponents_httpclient_4_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_httpcomponents_httpcore_4_1_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_httpcomponents_httpcore_4_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_httpcomponents_httpmime_4_1_2_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_httpcomponents_httpmime_4_1_2_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_jena_jena_arq_2_9_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_jena_jena_arq_2_9_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_jena_jena_core_2_7_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_jena_jena_core_2_7_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_apache_jena_jena_iri_0_9_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_jena_jena_iri_0_9_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_avaje_ebean_2_7_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_avaje_ebean_2_7_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_codehaus_jackson_jackson_core_asl_1_9_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_codehaus_jackson_jackson_core_asl_1_9_9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_codehaus_jackson_jackson_mapper_asl_1_9_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_codehaus_jackson_jackson_mapper_asl_1_9_9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_easytesting_fest_assert_1_4_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_easytesting_fest_assert_1_4_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_easytesting_fest_util_1_1_6_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_easytesting_fest_util_1_1_6_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_fluentlenium_fluentlenium_core_0_5_6_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_fluentlenium_fluentlenium_core_0_5_6_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_fluentlenium_fluentlenium_festassert_0_5_6_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_fluentlenium_fluentlenium_festassert_0_5_6_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_hibernate_hibernate_validator_4_2_0_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_hibernate_hibernate_validator_4_2_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_hibernate_javax_persistence_hibernate_jpa_2_0_api_1_0_1_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_joda_joda_convert_1_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_joda_joda_convert_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_json_json_20080701_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_json_json_20080701_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_protege_protege_editor_owl_4_1_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_protege_protege_editor_owl_4_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_reflections_reflections_0_9_6.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_reflections_reflections_0_9_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_scala_lang_scala_library_2_9_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_scala_lang_scala_library_2_9_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_scala_tools_scala_stm_2_9_1_0_5.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_scala_tools_scala_stm_2_9_1_0_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_scala_tools_testing_test_interface_0_5_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_scala_tools_testing_test_interface_0_5_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_android_driver_2_16_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_android_driver_2_16_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_api_2_16_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_api_2_16_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_chrome_driver_2_16_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_chrome_driver_2_16_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_firefox_driver_2_16_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_firefox_driver_2_16_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_htmlunit_driver_2_16_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_htmlunit_driver_2_16_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_ie_driver_2_16_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_ie_driver_2_16_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_iphone_driver_2_16_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_iphone_driver_2_16_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_java_2_16_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_java_2_16_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_remote_driver_2_16_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_remote_driver_2_16_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_support_2_16_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_seleniumhq_selenium_selenium_support_2_16_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_slf4j_jcl_over_slf4j_1_6_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_slf4j_jcl_over_slf4j_1_6_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_slf4j_jul_to_slf4j_1_6_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_slf4j_jul_to_slf4j_1_6_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_slf4j_slf4j_api_1_6_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_slf4j_slf4j_api_1_6_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_slf4j_slf4j_log4j12_1_6_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_slf4j_slf4j_log4j12_1_6_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_specs2_specs2_2_9_1_1_9_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_specs2_specs2_2_9_1_1_9_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_specs2_specs2_scalaz_core_2_9_1_6_0_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_specs2_specs2_scalaz_core_2_9_1_6_0_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_springframework_spring_beans_3_0_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_springframework_spring_beans_3_0_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_springframework_spring_context_3_0_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_springframework_spring_context_3_0_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_springframework_spring_core_3_0_7_RELEASE.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_springframework_spring_core_3_0_7_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_w3c_css_sac_1_3_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_w3c_css_sac_1_3_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/org_yaml_snakeyaml_1_9.xml" afterPath="$PROJECT_DIR$/.idea/libraries/org_yaml_snakeyaml_1_9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_anorm_2_9_1_2_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_anorm_2_9_1_2_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_play_2_9_1_2_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_play_2_9_1_2_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_play_test_2_9_1_2_0_3_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_play_test_2_9_1_2_0_3_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/play_templates_2_9_1_2_0_3.xml" afterPath="$PROJECT_DIR$/.idea/libraries/play_templates_2_9_1_2_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/scala_2_9_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/scala_2_9_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/tyrex_tyrex_1_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/tyrex_tyrex_1_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/xalan_serializer_2_7_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/xalan_serializer_2_7_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/xalan_xalan_2_7_1_test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/xalan_xalan_2_7_1_test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/xerces_xercesImpl_2_10_0.xml" afterPath="$PROJECT_DIR$/.idea/libraries/xerces_xercesImpl_2_10_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/xml_apis_xml_apis_1_4_01.xml" afterPath="$PROJECT_DIR$/.idea/libraries/xml_apis_xml_apis_1_4_01.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/util/ThumbnailGenerator.scala" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/public/img/glyphicons-halflings-white.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/glyphicons-halflings.png" afterPath="$PROJECT_DIR$/public/img/glyphicons-halflings.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea_modules/bookmarks-build.iml" afterPath="$PROJECT_DIR$/.idea_modules/bookmarks-build.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea_modules/bookmarks.iml" afterPath="$PROJECT_DIR$/.idea_modules/bookmarks.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Application.scala" afterPath="$PROJECT_DIR$/app/controllers/Application.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Bookmark.scala" afterPath="$PROJECT_DIR$/app/models/Bookmark.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookmarks.scala.html" afterPath="$PROJECT_DIR$/app/views/bookmarks.scala.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/newBookmark.scala.html" afterPath="$PROJECT_DIR$/app/views/newBookmark.scala.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ontologies/documents.owl" afterPath="$PROJECT_DIR$/public/ontologies/documents.owl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/bookmarks.css" afterPath="$PROJECT_DIR$/public/stylesheets/bookmarks.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/newBookmark.css" afterPath="$PROJECT_DIR$/public/stylesheets/newBookmark.css" />
     </list>
     <ignored path="bookmarks.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -171,43 +72,7 @@
       <file leaf-file-name="bookmarks.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/bookmarks.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="16" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bookmarks.scala.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/bookmarks.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="102" selection-start="961" selection-end="961" vertical-scroll-proportion="-19.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.scala.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="59" selection-start="739" selection-end="770" vertical-scroll-proportion="-22.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Bookmark.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/Bookmark.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="6" selection-start="2514" selection-end="2514" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newBookmark.scala.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/newBookmark.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="81" selection-start="995" selection-end="995" vertical-scroll-proportion="-19.25">
+            <state line="41" column="0" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -216,7 +81,52 @@
       <file leaf-file-name="newBookmark.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/newBookmark.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="169" column="14" selection-start="5576" selection-end="5576" vertical-scroll-proportion="0.0">
+            <state line="45" column="27" selection-start="1878" selection-end="1901" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bookmarks.scala.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/bookmarks.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="51" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.70309275">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newBookmark.scala.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/newBookmark.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="93" selection-start="1009" selection-end="1090" vertical-scroll-proportion="-20.166666">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.scala.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="54" selection-start="575" selection-end="605" vertical-scroll-proportion="-18.333334">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bookmark.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/Bookmark.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="14" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThumbnailGenerator.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/util/ThumbnailGenerator.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="48" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -234,16 +144,7 @@
       <file leaf-file-name="routes" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/routes">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="3" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="documents.owl" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/ontologies/documents.owl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.39821252">
+            <state line="13" column="4" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -266,12 +167,14 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/newBookmark.scala.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/newBookmark.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/bookmarks.css" />
-        <option value="$PROJECT_DIR$/app/views/bookmarks.scala.html" />
         <option value="$PROJECT_DIR$/app/controllers/Application.scala" />
         <option value="$PROJECT_DIR$/conf/routes" />
+        <option value="$PROJECT_DIR$/app/models/util/ThumbnailGenerator.scala" />
+        <option value="$PROJECT_DIR$/public/stylesheets/bookmarks.css" />
+        <option value="$PROJECT_DIR$/app/views/newBookmark.scala.html" />
+        <option value="$PROJECT_DIR$/app/models/Bookmark.scala" />
+        <option value="$PROJECT_DIR$/app/views/bookmarks.scala.html" />
       </list>
     </option>
   </component>
@@ -374,8 +277,22 @@
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
+              <option name="myItemId" value="bookmarks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookmarks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -393,21 +310,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ontologies" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bookmarks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bookmarks" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -479,8 +382,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Bookmark.scala" />
-              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -506,19 +409,47 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/img" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
       <option name="PROGRAM_PARAMETERS" />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <extension name="scalaCoverage" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="$PROJECT_DIR$" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -606,6 +537,17 @@
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
         <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
@@ -733,48 +675,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/newBookmark.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="81" selection-start="995" selection-end="995" vertical-scroll-proportion="-19.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/newBookmark.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="169" column="14" selection-start="5576" selection-end="5576" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/bookmarks.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="16" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="59" selection-start="739" selection-end="770" vertical-scroll-proportion="-22.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/bookmarks.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="102" selection-start="961" selection-end="961" vertical-scroll-proportion="-19.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Bookmark.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="6" selection-start="2514" selection-end="2514" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/Application.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="24" selection-start="939" selection-end="939" vertical-scroll-proportion="0.0">
@@ -782,20 +682,152 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="3" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/ontologies/documents.owl">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.39821252">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.3696498">
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/conf/routes">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="4" selection-start="386" selection-end="386" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/util/ThumbnailGenerator.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="48" selection-start="221" selection-end="221" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2038" column="20" selection-start="35869" selection-end="35869" vertical-scroll-proportion="0.49226007">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/index.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="54" selection-start="575" selection-end="605" vertical-scroll-proportion="-18.333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/newBookmark.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="93" selection-start="1009" selection-end="1090" vertical-scroll-proportion="-20.166666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/bookmarks.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="0" selection-start="1580" selection-end="1580" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/newBookmark.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="27" selection-start="1878" selection-end="1901" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Bookmark.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="14" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/bookmarks.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="51" selection-start="1548" selection-end="1548" vertical-scroll-proportion="0.70309275">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Scala</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>bookmarks</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>cglib_cglib-nodep_2.1_3_test</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>
 

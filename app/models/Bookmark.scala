@@ -4,6 +4,7 @@ import java.io.{FileOutputStream, File}
 import com.hp.hpl.jena.rdf.model.ModelFactory
 import com.hp.hpl.jena.ontology.{OntModel, OntModelSpec}
 import collection.mutable
+import util.ThumbnailGenerator
 
 
 /**
@@ -58,14 +59,17 @@ object Bookmark {
   }
 
   def create(url: String, name: String, tags: String) {
-    println("adding url: " + url)
-    val newBookmark = model.createIndividual(NS + "Bookmark_" + url.hashCode(), bookmarkClass)
+    var u = url
+    if (!url.startsWith("http")) u = "http://"+url
+    println("adding url: " + u)
+    ThumbnailGenerator.thumbnail(u, u.hashCode.toString)
+    val newBookmark = model.createIndividual(NS + "Bookmark_" + u.hashCode(), bookmarkClass)
 
-    val urlStatement = model.createStatement(newBookmark, urlProperty, url)
+    val urlStatement = model.createStatement(newBookmark, urlProperty, u)
     model.add(urlStatement)
     val nameStatement = model.createStatement(newBookmark, nameProperty, name)
     model.add(nameStatement)
-    val idStatement = model.createStatement(newBookmark, idProperty, url.hashCode().toString)
+    val idStatement = model.createStatement(newBookmark, idProperty, u.hashCode().toString)
     model.add(idStatement)
 
     for (s <- tags.split(",")) {

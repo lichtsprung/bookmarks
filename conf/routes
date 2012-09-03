@@ -11,7 +11,7 @@ POST    /newBookmark        controllers.Application.newBookmark
 
 # Bookmarks
 GET     /bookmarks              controllers.Application.bookmarks
-GET    /bookmarks/:hash/delete  controllers.Application.deleteBookmark(hash: Int)
+GET     /bookmarks/:hash/delete  controllers.Application.deleteBookmark(hash: Int)
 GET     /bookmarks/:tag         controllers.Application.tagDetails(tag: String)
 
 # Map static resources from the /public folder to the /assets URL path

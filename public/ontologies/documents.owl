@@ -9,15 +9,18 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
-:gaming
+:autos
       a       :Tag .
 
 :Tag  a       owl:Class .
 
-:internet
+:gaming
       a       :Tag .
 
 :news
+      a       :Tag .
+
+:internet
       a       :Tag .
 
 :name
@@ -25,8 +28,32 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
+:blog
+      a       :Tag .
+
 :recherche
       a       :Tag .
+
+:Bookmark_915822914
+      a       :Bookmark ;
+      :id     "915822914" ;
+      :isTaggedWith :news ;
+      :name   "Tagesschau" ;
+      :url    "http://www.tagesschau.de" .
+
+:Bookmark_1105871770
+      a       :Bookmark ;
+      :id     "1105871770" ;
+      :isTaggedWith :news , :it ;
+      :name   "Heise Nachrichten Magazin" ;
+      :url    "http://www.heise.de" .
+
+:Bookmark_-1427773513
+      a       :Bookmark ;
+      :id     "-1427773513" ;
+      :isTaggedWith :blog ;
+      :name   "Notch Blog" ;
+      :url    "http://notch.tumblr.com" .
 
 :id   a       owl:FunctionalProperty , owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
@@ -41,6 +68,13 @@
       a       owl:Class ;
       owl:disjointWith :Tag .
 
+:Bookmark_527325051
+      a       :Bookmark ;
+      :id     "527325051" ;
+      :isTaggedWith :autos ;
+      :name   "Mobile " ;
+      :url    "http://mobile.de" .
+
 :programming
       a       :Tag .
 
@@ -51,8 +85,10 @@
       a       :Bookmark ;
       :id     "1885128675" ;
       :isTaggedWith :news , :internet , :recherche ;
-      :name   "Spiegel" ;
+      :name   "Spiegel.de" ;
       :url    "http://www.spiegel.de" .
 
 <http://www.openplexus.net/documents>
       a       owl:Ontology .
+
+:it   a       :Tag .
