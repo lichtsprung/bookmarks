@@ -14,10 +14,10 @@
 
 :Tag  a       owl:Class .
 
-:news
+:internet
       a       :Tag .
 
-:internet
+:news
       a       :Tag .
 
 :name
@@ -25,22 +25,8 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
-:Bookmark_892240706
-      a       :Bookmark ;
-      :id     "892240706" ;
-      :isTaggedWith :news , :internet , :recherche ;
-      :name   "Heise Nachrichten Magazin" ;
-      :url    "http://www.gamestar.de" .
-
 :recherche
       a       :Tag .
-
-:Bookmark_1105871770
-      a       :Bookmark ;
-      :id     "1105871770" ;
-      :isTaggedWith :internet , :news ;
-      :name   "Heise Nachrichten Magazin" ;
-      :url    "http://www.heise.de" .
 
 :id   a       owl:FunctionalProperty , owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
@@ -64,23 +50,9 @@
 :Bookmark_1885128675
       a       :Bookmark ;
       :id     "1885128675" ;
-      :isTaggedWith :gaming ;
-      :name   "Heise Nachrichten Magazin" ;
+      :isTaggedWith :news , :internet , :recherche ;
+      :name   "Spiegel" ;
       :url    "http://www.spiegel.de" .
 
 <http://www.openplexus.net/documents>
       a       owl:Ontology .
-
-:Bookmark_-872438255
-      a       :Bookmark ;
-      :id     "-872438255" ;
-      :isTaggedWith :gaming ;
-      :name   "Spiegel AG" ;
-      :url    "heise.de" .
-
-:Bookmark_1688356922
-      a       :Bookmark ;
-      :id     "1688356922" ;
-      :isTaggedWith :programming ;
-      :name   "DZone" ;
-      :url    "http://www.dzone.com" .

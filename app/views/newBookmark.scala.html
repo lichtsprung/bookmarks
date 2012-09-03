@@ -17,9 +17,9 @@
 
         @form(action = routes.Application.newBookmark, 'id -> "addBookmark", 'class -> "inputs", 'args -> "autofocus"){
             <h1>New Bookmark</h1>
-            @inputText(bookmarkForm("url"), '_label -> "", 'placeholder -> "URL", 'class -> "input-xxlarge")
-            @inputText(bookmarkForm("name"),'_label -> "", 'placeholder -> "Name",'class -> "input-xxlarge")
-            @inputText(bookmarkForm("tags"),'_label -> "", 'placeholder -> "Tags",'class -> "input-xxlarge")
+            @inputText(bookmarkForm("url"), '_label -> "", 'placeholder -> "URL")
+            @inputText(bookmarkForm("name"),'_label -> "", 'placeholder -> "Name")
+            @inputText(bookmarkForm("tags"),'_label -> "", 'placeholder -> "Tags")
             <div id="backbutton" class="btn"><a href="@routes.Application.index()">Back</a></div>
             <input id="submit" type="submit" value="Create">
         }

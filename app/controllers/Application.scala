@@ -38,12 +38,12 @@ object Application extends Controller {
   }
 
   def bookmarks = Action {
-    Ok(views.html.bookmarks())
+    Ok(views.html.bookmarks(Bookmark.all()))
   }
 
 
-  def deleteBookmark(urlHash: String) = Action {
-    Bookmark.delete(urlHash)
+  def deleteBookmark(hash: Int) = Action {
+    Bookmark.delete(hash.toString)
     Redirect(routes.Application.bookmarks())
   }
 

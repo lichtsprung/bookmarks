@@ -132,7 +132,6 @@ h1:before {
     border-style: solid;
     border-color: #d69e31 #e3a037 #d5982d #e3a037;
 
-    float: left;
     height: 50px;
     padding: 0;
     width: 120px;
@@ -168,10 +167,14 @@ h1:before {
 
 #url, #name, #tags {
     height: 30px;
+    width:98%;
 }
 
 #backbutton {
     float: left;
+    cursor: pointer;
+    font: bold 15px Arial, Helvetica;
+    color: #8f5a0a;
 }
 
 
