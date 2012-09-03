@@ -9,6 +9,13 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
+:Bookmark_-1861887696
+      a       :Bookmark ;
+      :id     "-1861887696" ;
+      :isTaggedWith :news ;
+      :name   "Die Zeit" ;
+      :url    "http://www.zeit.de" .
+
 :autos
       a       :Tag .
 
@@ -32,6 +39,9 @@
       a       :Tag .
 
 :recherche
+      a       :Tag .
+
+:science
       a       :Tag .
 
 :Bookmark_915822914

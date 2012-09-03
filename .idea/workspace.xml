@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c30ee9c-5af5-4bf9-b3f1-a578b5888a78" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/util/ThumbnailGenerator.scala" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/public/img/glyphicons-halflings-white.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/public/images/glyphicons-halflings.png" afterPath="$PROJECT_DIR$/public/img/glyphicons-halflings.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/Bookmark.scala" afterPath="$PROJECT_DIR$/app/models/Bookmark.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookmarks.scala.html" afterPath="$PROJECT_DIR$/app/views/bookmarks.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/newBookmark.scala.html" afterPath="$PROJECT_DIR$/app/views/newBookmark.scala.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/ontologies/documents.owl" afterPath="$PROJECT_DIR$/public/ontologies/documents.owl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/bookmarks.css" afterPath="$PROJECT_DIR$/public/stylesheets/bookmarks.css" />
-    </list>
+    <list default="true" id="2c30ee9c-5af5-4bf9-b3f1-a578b5888a78" name="Default" comment="" />
     <ignored path="bookmarks.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -179,8 +168,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="65" />
-    <option name="y" value="24" />
+    <option name="x" value="1985" />
+    <option name="y" value="1224" />
     <option name="width" value="1855" />
     <option name="height" value="1176" />
   </component>
@@ -593,7 +582,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="24" width="1855" height="1176" extended-state="6" />
+    <frame x="1985" y="1224" width="1855" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
