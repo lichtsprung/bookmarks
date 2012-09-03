@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="play_anorm_2.9.1_2.0.3">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/play/anorm_2.9.1/jars/anorm_2.9.1-2.0.3.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/play/anorm_2.9.1/jars/anorm_2.9.1-2.0.3.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/play/anorm_2.9.1/docs/anorm_2.9.1-2.0.3-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/play/anorm_2.9.1/docs/anorm_2.9.1-2.0.3-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/play/anorm_2.9.1/srcs/anorm_2.9.1-2.0.3-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/play/anorm_2.9.1/srcs/anorm_2.9.1-2.0.3-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

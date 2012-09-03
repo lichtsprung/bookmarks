@@ -1,20 +1,27 @@
 @(bookmarkForm: Form[Bookmark])
 
-<link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/newBookmark.css")" />
-<link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/bootstrap.css")" />
-
 @import helper._
 @import helper.twitterBootstrap._
 
+<!DOCTYPE html>
 
+<html>
+    <head>
+        <title>Bookmark Overview</title>
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/bootstrap.css")" />
+        <link rel="stylesheet" type="text/css" href="@routes.Assets.at("stylesheets/newBookmark.css")" />
+        <script src="@routes.Assets.at("javascripts/bootstrap.js")" type="text/javascript"></script>
+    </head>
+    <body>
 
-@main("Add Bookmark"){
-
-    @form(action = routes.Application.newBookmark, 'id -> "addBookmark", 'class -> "inputs", 'args -> "autofocus"){
-        <h1>New Bookmark</h1>
-        @inputText(bookmarkForm("url"), '_label -> "", 'placeholder -> "URL", 'class -> "input-xxlarge")
-        @inputText(bookmarkForm("name"),'_label -> "", 'placeholder -> "Name",'class -> "input-xxlarge")
-        @inputText(bookmarkForm("tags"),'_label -> "", 'placeholder -> "Tags",'class -> "input-xxlarge")
-        <input id="submit" type="submit" value="Create">
-    }
-}
+        @form(action = routes.Application.newBookmark, 'id -> "addBookmark", 'class -> "inputs", 'args -> "autofocus"){
+            <h1>New Bookmark</h1>
+            @inputText(bookmarkForm("url"), '_label -> "", 'placeholder -> "URL", 'class -> "input-xxlarge")
+            @inputText(bookmarkForm("name"),'_label -> "", 'placeholder -> "Name",'class -> "input-xxlarge")
+            @inputText(bookmarkForm("tags"),'_label -> "", 'placeholder -> "Tags",'class -> "input-xxlarge")
+            <div id="backbutton" class="btn"><a href="@routes.Application.index()">Back</a></div>
+            <input id="submit" type="submit" value="Create">
+        }
+    </body>
+</html>

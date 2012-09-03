@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="org.protege_protege-editor-owl_4.1.0">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/org.protege/protege-editor-owl/jars/protege-editor-owl-4.1.0.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.protege/protege-editor-owl/jars/protege-editor-owl-4.1.0.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/org.protege/protege-editor-owl/docs/protege-editor-owl-4.1.0-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.protege/protege-editor-owl/docs/protege-editor-owl-4.1.0-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/org.protege/protege-editor-owl/srcs/protege-editor-owl-4.1.0-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.protege/protege-editor-owl/srcs/protege-editor-owl-4.1.0-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

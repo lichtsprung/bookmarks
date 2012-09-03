@@ -31,20 +31,20 @@ object Application extends Controller {
           BadRequest(views.html.index())},
         success => {
           Bookmark.create(success.url, success.name, success.tags)
-          Redirect(routes.Application.bookmarks)
+          Redirect(routes.Application.bookmarks())
         }
 
       )
   }
 
   def bookmarks = Action {
-    Ok(views.html.index())
+    Ok(views.html.bookmarks())
   }
 
 
   def deleteBookmark(urlHash: String) = Action {
     Bookmark.delete(urlHash)
-    Redirect(routes.Application.bookmarks)
+    Redirect(routes.Application.bookmarks())
   }
 
   def tagDetails(tag: String) = Action {

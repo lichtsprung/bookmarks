@@ -21,8 +21,6 @@
       <sourceFolder url="file://$MODULE_DIR$/../test/resources" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/../target/scala-2.9.1/cache" />
       <excludeFolder url="file://$MODULE_DIR$/../target/scala-2.9.1/classes" />
-      <excludeFolder url="file://$MODULE_DIR$/../target/scala-2.9.1/classes_managed" />
-      <excludeFolder url="file://$MODULE_DIR$/../target/scala-2.9.1/test-classes" />
       <excludeFolder url="file://$MODULE_DIR$/../target/streams" />
     </content>
     <orderEntry type="inheritedJdk" />

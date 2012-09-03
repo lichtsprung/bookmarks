@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="net.sourceforge.owlapi_owlapi-apibinding_3.4">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/net.sourceforge.owlapi/owlapi-apibinding/jars/owlapi-apibinding-3.4.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/net.sourceforge.owlapi/owlapi-apibinding/jars/owlapi-apibinding-3.4.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/net.sourceforge.owlapi/owlapi-apibinding/docs/owlapi-apibinding-3.4-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/net.sourceforge.owlapi/owlapi-apibinding/docs/owlapi-apibinding-3.4-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/Tools/play/repository/cache/net.sourceforge.owlapi/owlapi-apibinding/srcs/owlapi-apibinding-3.4-sources.jar!/" />
+      <root url="jar://$USER_HOME$/.ivy2/cache/net.sourceforge.owlapi/owlapi-apibinding/srcs/owlapi-apibinding-3.4-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

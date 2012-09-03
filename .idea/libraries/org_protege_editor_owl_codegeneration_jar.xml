@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="org.protege.editor.owl.codegeneration.jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/org.protege.editor.owl.codegeneration.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
