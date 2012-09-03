@@ -9,6 +9,11 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
+:Tag  a       owl:Class .
+
+:autos
+      a       :Tag .
+
 :Bookmark_-1861887696
       a       :Bookmark ;
       :id     "-1861887696" ;
@@ -16,24 +21,46 @@
       :name   "Die Zeit" ;
       :url    "http://www.zeit.de" .
 
-:autos
+:name
+      a       owl:DatatypeProperty ;
+      rdfs:domain :Bookmark ;
+      rdfs:range xsd:string .
+
+:Bookmark_915822914
+      a       :Bookmark ;
+      :id     "915822914" ;
+      :isTaggedWith :news ;
+      :name   "Tagesschau" ;
+      :url    "http://www.tagesschau.de" .
+
+:titten
       a       :Tag .
 
-:Tag  a       owl:Class .
+:isTaggedWith
+      a       owl:ObjectProperty ;
+      rdfs:domain :Bookmark ;
+      rdfs:range :Tag .
+
+:programming
+      a       :Tag .
+
+:it   a       :Tag .
 
 :gaming
-      a       :Tag .
-
-:news
       a       :Tag .
 
 :internet
       a       :Tag .
 
-:name
-      a       owl:DatatypeProperty ;
-      rdfs:domain :Bookmark ;
-      rdfs:range xsd:string .
+:news
+      a       :Tag .
+
+:Bookmark_465014121
+      a       :Bookmark ;
+      :id     "465014121" ;
+      :isTaggedWith :news , :internet , :recherche ;
+      :name   "Focus" ;
+      :url    "http://focus.de" .
 
 :blog
       a       :Tag .
@@ -43,13 +70,6 @@
 
 :science
       a       :Tag .
-
-:Bookmark_915822914
-      a       :Bookmark ;
-      :id     "915822914" ;
-      :isTaggedWith :news ;
-      :name   "Tagesschau" ;
-      :url    "http://www.tagesschau.de" .
 
 :Bookmark_1105871770
       a       :Bookmark ;
@@ -69,11 +89,6 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
-:isTaggedWith
-      a       owl:ObjectProperty ;
-      rdfs:domain :Bookmark ;
-      rdfs:range :Tag .
-
 :Bookmark
       a       owl:Class ;
       owl:disjointWith :Tag .
@@ -85,12 +100,6 @@
       :name   "Mobile " ;
       :url    "http://mobile.de" .
 
-:programming
-      a       :Tag .
-
-:search
-      a       :Tag .
-
 :Bookmark_1885128675
       a       :Bookmark ;
       :id     "1885128675" ;
@@ -98,7 +107,8 @@
       :name   "Spiegel.de" ;
       :url    "http://www.spiegel.de" .
 
+:search
+      a       :Tag .
+
 <http://www.openplexus.net/documents>
       a       owl:Ontology .
-
-:it   a       :Tag .
