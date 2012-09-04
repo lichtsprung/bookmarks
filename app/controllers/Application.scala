@@ -38,7 +38,7 @@ object Application extends Controller {
   }
 
   def bookmarks = Action {
-    Ok(views.html.bookmarks(Bookmark.all()))
+    Ok(views.html.bookmarks(Bookmark.all(), form))
   }
 
 

@@ -1,4 +1,4 @@
-.bookmark{
+.bookmark {
     background-color: #fff;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
     background-image: -webkit-linear-gradient(top, #fff, #eee);
@@ -16,7 +16,7 @@
 
 }
 
-#searchButton{
+#searchButton {
     background-color: #ffb94b;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#fddb6f), to(#ffb94b));
     background-image: -webkit-linear-gradient(top, #fddb6f, #ffb94b);
@@ -29,13 +29,30 @@
 }
 
 #deleteButton {
-    float:right;
+    float: right;
 }
 
-#left{
+#left {
     float: left;
 }
 
-#right{
+#right {
     float: left;
 }
+
+#blanket {
+    background-color: #111;
+    opacity: 0.65;
+    *background: none;
+    position: absolute;
+    z-index: 9001;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#popUp {
+    position: absolute;
+    z-index: 9002;
+}
+

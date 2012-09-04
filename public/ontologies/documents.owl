@@ -5,6 +5,13 @@
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:     <http://www.w3.org/XML/1998/namespace> .
 
+:Bookmark_-897203068
+      a       :Bookmark ;
+      :id     "-897203068" ;
+      :isTaggedWith :apple , :mac ;
+      :name   "Apple" ;
+      :url    "http://www.apple.com" .
+
 :url  a       owl:FunctionalProperty , owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
@@ -62,6 +69,9 @@
       :name   "Focus" ;
       :url    "http://focus.de" .
 
+:apple
+      a       :Tag .
+
 :blog
       a       :Tag .
 
@@ -78,6 +88,8 @@
       :name   "Heise Nachrichten Magazin" ;
       :url    "http://www.heise.de" .
 
+:mac  a       :Tag .
+
 :Bookmark_-1427773513
       a       :Bookmark ;
       :id     "-1427773513" ;
@@ -92,13 +104,6 @@
 :Bookmark
       a       owl:Class ;
       owl:disjointWith :Tag .
-
-:Bookmark_527325051
-      a       :Bookmark ;
-      :id     "527325051" ;
-      :isTaggedWith :autos ;
-      :name   "Mobile " ;
-      :url    "http://mobile.de" .
 
 :Bookmark_1885128675
       a       :Bookmark ;
