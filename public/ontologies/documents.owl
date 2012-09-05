@@ -16,11 +16,6 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
-:Tag  a       owl:Class .
-
-:autos
-      a       :Tag .
-
 :Bookmark_-1861887696
       a       :Bookmark ;
       :id     "-1861887696" ;
@@ -28,10 +23,22 @@
       :name   "Die Zeit" ;
       :url    "http://www.zeit.de" .
 
+:Tag  a       owl:Class .
+
+:autos
+      a       :Tag .
+
 :name
       a       owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
+
+:Bookmark_-713867590
+      a       :Bookmark ;
+      :id     "-713867590" ;
+      :isTaggedWith :computer ;
+      :name   "Chip" ;
+      :url    "http://www.chip.de" .
 
 :Bookmark_915822914
       a       :Bookmark ;
@@ -81,14 +88,14 @@
 :science
       a       :Tag .
 
+:mac  a       :Tag .
+
 :Bookmark_1105871770
       a       :Bookmark ;
       :id     "1105871770" ;
       :isTaggedWith :news , :it ;
       :name   "Heise Nachrichten Magazin" ;
       :url    "http://www.heise.de" .
-
-:mac  a       :Tag .
 
 :Bookmark_-1427773513
       a       :Bookmark ;
@@ -100,6 +107,9 @@
 :id   a       owl:FunctionalProperty , owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
+
+:computer
+      a       :Tag .
 
 :Bookmark
       a       owl:Class ;

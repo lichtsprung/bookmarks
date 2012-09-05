@@ -59,17 +59,14 @@ object Bookmark {
   }
 
   def create(url: String, name: String, tags: String) {
-    var u = url
-    if (!url.startsWith("http")) u = "http://"+url
-    println("adding url: " + u)
-    ThumbnailGenerator.thumbnail(u, u.hashCode.toString)
-    val newBookmark = model.createIndividual(NS + "Bookmark_" + u.hashCode(), bookmarkClass)
 
-    val urlStatement = model.createStatement(newBookmark, urlProperty, u)
+    val newBookmark = model.createIndividual(NS + "Bookmark_" + url.hashCode(), bookmarkClass)
+
+    val urlStatement = model.createStatement(newBookmark, urlProperty, url)
     model.add(urlStatement)
     val nameStatement = model.createStatement(newBookmark, nameProperty, name)
     model.add(nameStatement)
-    val idStatement = model.createStatement(newBookmark, idProperty, u.hashCode().toString)
+    val idStatement = model.createStatement(newBookmark, idProperty, url.hashCode().toString)
     model.add(idStatement)
 
     for (s <- tags.split(",")) {

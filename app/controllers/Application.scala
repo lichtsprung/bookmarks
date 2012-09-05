@@ -1,12 +1,16 @@
 package controllers
 
+import actors.{ThumbnailMessage, ThumbnailActor}
 import models._
 
 import play.api.mvc._
 import play.api.data.Form
 import play.api.data.Forms._
+import akka.actor.{Props, ActorSystem}
 
 object Application extends Controller {
+  val actorSystem = ActorSystem("test")
+  val thumbnailActor = actorSystem.actorOf(Props[ThumbnailActor])
 
   val form = Form(
     mapping(
@@ -28,9 +32,13 @@ object Application extends Controller {
     implicit request =>
       form.bindFromRequest.fold(
         hasErrors => {
-          BadRequest(views.html.index())},
+          BadRequest(views.html.index())
+        },
         success => {
-          Bookmark.create(success.url, success.name, success.tags)
+          var u = success.url
+          if (!success.url.startsWith("http")) u = "http://" + success.url
+          thumbnailActor ! ThumbnailMessage(u, u.hashCode.toString)
+          Bookmark.create(u, success.name, success.tags)
           Redirect(routes.Application.bookmarks())
         }
 
