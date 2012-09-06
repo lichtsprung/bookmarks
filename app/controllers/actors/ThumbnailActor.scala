@@ -1,7 +1,7 @@
 package controllers.actors
 
 import akka.actor.Actor
-import models.util.ThumbnailGenerator
+import controllers.util.ThumbnailGenerator
 
 case class ThumbnailMessage(url: String, filename: String)
 

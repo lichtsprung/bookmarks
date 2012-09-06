@@ -4,7 +4,6 @@ import java.io.{FileOutputStream, File}
 import com.hp.hpl.jena.rdf.model.ModelFactory
 import com.hp.hpl.jena.ontology.{OntModel, OntModelSpec}
 import collection.mutable
-import util.ThumbnailGenerator
 
 
 /**

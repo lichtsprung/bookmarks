@@ -47,6 +47,13 @@
       :name   "Tagesschau" ;
       :url    "http://www.tagesschau.de" .
 
+:Bookmark_599976216
+      a       :Bookmark ;
+      :id     "599976216" ;
+      :isTaggedWith :news ;
+      :name   "Süddeutsche Zeitung" ;
+      :url    "http://www.sueddeutsche.de" .
+
 :titten
       a       :Tag .
 

@@ -17,7 +17,7 @@
     </head>
     <body onload="popup('popUp')">
 
-        <div class="span9" id="container">
+        <div class="span12" id="container">
             <div id="search" class="well well-large">
                 <a id="searchButton" class="btn" href="#" onclick="popup('popUp')"><i class="icon-plus"></i></a>
                 <form class="form-search pull-right">
@@ -29,9 +29,14 @@
             </div>
             <ul class="thumbnails">
             @bookmarks.map{ bookmark =>
-                    <li class="span3">
+                    <li class="span4">
                         <div class="thumbnail bookmark">
-                            <a href="@bookmark.url"><img style="border: 1px solid #ccc" src="@routes.Assets.at("images/thumbnails/"+bookmark.url.hashCode()+".png")" alt=""class="img-rounded"></a>
+                            <a href="@bookmark.url">
+                                <div  style= "width: 100%;height:300px;" class="bookmarkplaceholder">
+                                    <img style="border: 1px solid #ccc;width: 100%;height:300px;" src="@routes.Assets.at("images/thumbnails/"+bookmark.url.hashCode()+".png")" alt="@bookmark.name" class="img-rounded">
+                                </div>
+
+                            </a>
                             <h5>@bookmark.name</h5>
                             <p><em>@bookmark.tags</em></p>
                             <a class="btn btn-small" href="@routes.Application.deleteBookmark(bookmark.url.hashCode())"><i class="icon-minus"></i></a>

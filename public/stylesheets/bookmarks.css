@@ -56,3 +56,8 @@
     z-index: 9002;
 }
 
+.bookmarkplaceholder {
+    background-image: url("../img/placeholder.png")
+}
+
+

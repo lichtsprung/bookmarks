@@ -56,7 +56,7 @@ object Application extends Controller {
   }
 
   def tagDetails(tag: String) = Action {
-    Ok(views.html.index())
+    Ok(views.html.bookmarks(Bookmark.forTag(tag), form))
   }
 
 }
