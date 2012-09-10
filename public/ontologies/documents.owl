@@ -5,13 +5,6 @@
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:     <http://www.w3.org/XML/1998/namespace> .
 
-:Bookmark_-897203068
-      a       :Bookmark ;
-      :id     "-897203068" ;
-      :isTaggedWith :apple , :mac ;
-      :name   "Apple" ;
-      :url    "http://www.apple.com" .
-
 :url  a       owl:FunctionalProperty , owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
@@ -23,9 +16,12 @@
       :name   "Die Zeit" ;
       :url    "http://www.zeit.de" .
 
+:autos
+      a       :Tag .
+
 :Tag  a       owl:Class .
 
-:autos
+<http://www.openplexus.net/documents#spiele!>
       a       :Tag .
 
 :name
@@ -36,7 +32,7 @@
 :Bookmark_-713867590
       a       :Bookmark ;
       :id     "-713867590" ;
-      :isTaggedWith :computer ;
+      :isTaggedWith :internet , :computer ;
       :name   "Chip" ;
       :url    "http://www.chip.de" .
 
@@ -104,13 +100,6 @@
       :name   "Heise Nachrichten Magazin" ;
       :url    "http://www.heise.de" .
 
-:Bookmark_-1427773513
-      a       :Bookmark ;
-      :id     "-1427773513" ;
-      :isTaggedWith :blog ;
-      :name   "Notch Blog" ;
-      :url    "http://notch.tumblr.com" .
-
 :id   a       owl:FunctionalProperty , owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
@@ -122,12 +111,12 @@
       a       owl:Class ;
       owl:disjointWith :Tag .
 
-:Bookmark_1885128675
+:Bookmark_1928056074
       a       :Bookmark ;
-      :id     "1885128675" ;
-      :isTaggedWith :news , :internet , :recherche ;
-      :name   "Spiegel.de" ;
-      :url    "http://www.spiegel.de" .
+      :id     "1928056074" ;
+      :isTaggedWith <http://www.openplexus.net/documents#spiele!> ;
+      :name   "PC Games" ;
+      :url    "http://www.pcgames.de" .
 
 :search
       a       :Tag .
