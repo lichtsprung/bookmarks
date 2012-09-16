@@ -30,6 +30,7 @@ class BookmarkPageCrawler extends WebCrawler{
   override def visit(page: Page){
     page.getParseData match {
       case data: HtmlParseData =>
+        // TODO Indexing and Term Extraction in separaten Actor
         println(data.getText)
     }
   }

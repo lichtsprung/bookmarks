@@ -123,3 +123,10 @@
 
 <http://www.openplexus.net/documents>
       a       owl:Ontology .
+
+:Bookmark_1688356922
+      a       :Bookmark ;
+      :id     "1688356922" ;
+      :isTaggedWith :programming ;
+      :name   "Dzone Community" ;
+      :url    "http://www.dzone.com" .
