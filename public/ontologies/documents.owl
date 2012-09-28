@@ -36,12 +36,22 @@
       :name   "Chip" ;
       :url    "http://www.chip.de" .
 
+:Bookmark_1130185264
+      a       :Bookmark ;
+      :id     "1130185264" ;
+      :isTaggedWith :gaming , :shopping ;
+      :name   "Steam" ;
+      :url    "http://www.steampowered.com" .
+
 :Bookmark_915822914
       a       :Bookmark ;
       :id     "915822914" ;
       :isTaggedWith :news ;
       :name   "Tagesschau" ;
       :url    "http://www.tagesschau.de" .
+
+:gamining
+      a       :Tag .
 
 :Bookmark_599976216
       a       :Bookmark ;
@@ -63,13 +73,10 @@
 
 :it   a       :Tag .
 
+:shopping
+      a       :Tag .
+
 :gaming
-      a       :Tag .
-
-:internet
-      a       :Tag .
-
-:news
       a       :Tag .
 
 :Bookmark_465014121
@@ -78,6 +85,12 @@
       :isTaggedWith :news , :internet , :recherche ;
       :name   "Focus" ;
       :url    "http://focus.de" .
+
+:news
+      a       :Tag .
+
+:internet
+      a       :Tag .
 
 :apple
       a       :Tag .
