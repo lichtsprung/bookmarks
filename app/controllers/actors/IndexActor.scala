@@ -7,9 +7,10 @@ case class IndexMessage(pageText: String)
 /**
  * Actor for parallel website indexing.
  */
-class IndexActor extends Actor{
+class IndexActor extends Actor {
 
   def receive = {
-    case IndexMessage(text) => // TODO Create new Lucene Document
+    case IndexMessage(text) =>
+      println(text)
   }
 }

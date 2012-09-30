@@ -18,17 +18,14 @@ class BookmarkPageCrawler extends WebCrawler {
 
   override def shouldVisit(url: WebURL): Boolean = {
     val href = url.getURL.toLowerCase
-    true
+    href.endsWith("html") || href.endsWith("htm")
   }
 
-
+import controllers.Application._
   override def visit(page: Page) {
     page.getParseData match {
       case data: HtmlParseData =>
-        // TODO Indexing and Term Extraction in separaten Actor
-        println("Stopword Removal...")
-        println("Term Weighting and Topic Extraction...")
-        println("Adding Tags to Ontology...")
+        indexActor ! IndexMessage(data.getText)
     }
   }
 }
