@@ -11,17 +11,14 @@ import edu.uci.ics.crawler4j.robotstxt.{RobotstxtServer, RobotstxtConfig}
 case class CrawlMessage(url: String)
 
 class BookmarkPageCrawler extends WebCrawler {
-  val filter = Pattern.compile(".*(\\.(css|js|bmp|gif|jpe?g"
-    + "|png|tiff?|mid|mp2|mp3|mp4"
-    + "|wav|avi|mov|mpeg|ram|m4v|pdf"
-    + "|rm|smil|wmv|swf|wma|zip|rar|gz))$")
 
   override def shouldVisit(url: WebURL): Boolean = {
     val href = url.getURL.toLowerCase
     href.endsWith("html") || href.endsWith("htm")
   }
 
-import controllers.Application._
+  import controllers.Application._
+
   override def visit(page: Page) {
     page.getParseData match {
       case data: HtmlParseData =>
