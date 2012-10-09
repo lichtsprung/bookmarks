@@ -9,17 +9,17 @@
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
+:autos
+      a       :Tag .
+
+:Tag  a       owl:Class .
+
 :Bookmark_-1861887696
       a       :Bookmark ;
       :id     "-1861887696" ;
       :isTaggedWith :news ;
       :name   "Die Zeit" ;
       :url    "http://www.zeit.de" .
-
-:autos
-      a       :Tag .
-
-:Tag  a       owl:Class .
 
 <http://www.openplexus.net/documents#spiele!>
       a       :Tag .
@@ -28,6 +28,16 @@
       a       owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
+
+:Bookmark_1382307833
+      a       :Bookmark ;
+      :id     "1382307833" ;
+      :isTaggedWith :recipe ;
+      :name   "Lachs im Zucchinimantel" ;
+      :url    "http://www.chefkoch.de/rezepte/2007591325498506/Lachs-im-Zucchinimantel-an-Minz-Tzatziki.html" .
+
+:bundeswehr
+      a       :Tag .
 
 :Bookmark_-713867590
       a       :Bookmark ;
@@ -50,7 +60,14 @@
       :name   "Tagesschau" ;
       :url    "http://www.tagesschau.de" .
 
-:gamining
+:Bookmark_716803671
+      a       :Bookmark ;
+      :id     "716803671" ;
+      :isTaggedWith :bundeswehr ;
+      :name   "Die Bundeswehr" ;
+      :url    "http://www.bundeswehr.de" .
+
+:tasks
       a       :Tag .
 
 :Bookmark_599976216
@@ -60,6 +77,9 @@
       :name   "Süddeutsche Zeitung" ;
       :url    "http://www.sueddeutsche.de" .
 
+:gamining
+      a       :Tag .
+
 :titten
       a       :Tag .
 
@@ -68,15 +88,38 @@
       rdfs:domain :Bookmark ;
       rdfs:range :Tag .
 
+:Bookmark_470432831
+      a       :Bookmark ;
+      :id     "470432831" ;
+      :isTaggedWith :programming ;
+      :name   "Github" ;
+      :url    "http://www.github.com" .
+
 :programming
       a       :Tag .
 
+:ebooks
+      a       :Tag .
+
+:Bookmark_1116757591
+      a       :Bookmark ;
+      :id     "1116757591" ;
+      :isTaggedWith :city ;
+      :name   "Stadt Sassenberg" ;
+      :url    "http://www.sassenberg.de" .
+
 :it   a       :Tag .
+
+:python
+      a       :Tag .
 
 :shopping
       a       :Tag .
 
 :gaming
+      a       :Tag .
+
+:internet
       a       :Tag .
 
 :Bookmark_465014121
@@ -89,19 +132,29 @@
 :news
       a       :Tag .
 
-:internet
+:Bookmark_926452599
+      a       :Bookmark ;
+      :id     "926452599" ;
+      :isTaggedWith :tasks ;
+      :name   "Task Management" ;
+      :url    "http://www.ubuntugeek.com/nitro-awesome-task-management.html" .
+
+:blog
       a       :Tag .
 
 :apple
       a       :Tag .
 
-:blog
+:scala
       a       :Tag .
 
 :recherche
       a       :Tag .
 
 :science
+      a       :Tag .
+
+:city
       a       :Tag .
 
 :mac  a       :Tag .
@@ -113,16 +166,36 @@
       :name   "Heise Nachrichten Magazin" ;
       :url    "http://www.heise.de" .
 
+:recipe
+      a       :Tag .
+
+:Bookmark_-1311416526
+      a       :Bookmark ;
+      :id     "-1311416526" ;
+      :isTaggedWith :programming ;
+      :name   "Sourceforge" ;
+      :url    "http://www.sourceforge.net" .
+
+:Bookmark_1935564584
+      a       :Bookmark ;
+      :id     "1935564584" ;
+      :isTaggedWith :city ;
+      :name   "Stadt Warendorf" ;
+      :url    "http://www.warendorf.de" .
+
 :id   a       owl:FunctionalProperty , owl:DatatypeProperty ;
       rdfs:domain :Bookmark ;
       rdfs:range xsd:string .
 
+:Bookmark_228367956
+      a       :Bookmark ;
+      :id     "228367956" ;
+      :isTaggedWith :scala , :programming ;
+      :name   "Scala Programming Language" ;
+      :url    "http://www.scala-lang.org" .
+
 :computer
       a       :Tag .
-
-:Bookmark
-      a       owl:Class ;
-      owl:disjointWith :Tag .
 
 :Bookmark_1928056074
       a       :Bookmark ;
@@ -130,6 +203,10 @@
       :isTaggedWith <http://www.openplexus.net/documents#spiele!> ;
       :name   "PC Games" ;
       :url    "http://www.pcgames.de" .
+
+:Bookmark
+      a       owl:Class ;
+      owl:disjointWith :Tag .
 
 :search
       a       :Tag .

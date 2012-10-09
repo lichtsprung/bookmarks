@@ -13,7 +13,7 @@ class BookmarkActor extends Actor {
   def receive = {
     case CreateBookmarkMessage(url, name, tags) =>
       thumbnailActor ! ThumbnailMessage(url, url.hashCode.toString)
-      crawlActor ! CrawlMessage(url)
+      crawlActor ! CrawlMessage(url, tags)
   }
 }
 
