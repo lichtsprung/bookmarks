@@ -15,10 +15,10 @@ class DbpediaLookupActor extends Actor {
 
   /**
    * Returns the SPARQL query that gets the abstracts of the resources with the specified term.
-   * @param term the search term
+   * @param resource the search term
    * @return the query
    */
-  def lookupAbstractFor(term: String) = {
+  def lookupAbstractFor(resource: String) = {
     """
       |PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       |PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -27,7 +27,7 @@ class DbpediaLookupActor extends Actor {
       |WHERE{
       | TERM dbpedia:abstract ?abstract
       |}
-    """.stripMargin.replaceAllLiterally("TERM", term)
+    """.stripMargin.replaceAllLiterally("TERM", resource)
   }
 
   /**
@@ -42,8 +42,8 @@ class DbpediaLookupActor extends Actor {
       |PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       |SELECT DISTINCT ?label WHERE {
       |	?resouces rdf:type TYPE.
-      |        ?resouces rdfs:label ?label .
-      |        FILTER (lang(?label) = 'en').
+      | ?resouces rdfs:label ?label .
+      | FILTER (lang(?label) = 'en').
       |}
     """.stripMargin.replaceAllLiterally("TYPE", typeName)
   }
@@ -59,7 +59,7 @@ class DbpediaLookupActor extends Actor {
       |PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       |PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       |SELECT DISTINCT ?s ?o	WHERE {
-      |	?s  <http://www.w3.org/2000/01/rdf-schema#label> ?o .
+      |	?s rdfs:label ?o.
       |	?o bif:contains TERM.
       |
       | FILTER (!regex(str(?s), '^http://dbpedia.org/resource/Category:')).
