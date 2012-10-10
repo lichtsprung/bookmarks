@@ -5,21 +5,123 @@
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml:     <http://www.w3.org/XML/1998/namespace> .
 
-:url  a       owl:FunctionalProperty , owl:DatatypeProperty ;
-      rdfs:domain :Bookmark ;
-      rdfs:range xsd:string .
-
-:autos
-      a       :Tag .
-
-:Tag  a       owl:Class .
-
 :Bookmark_-1861887696
       a       :Bookmark ;
       :id     "-1861887696" ;
       :isTaggedWith :news ;
       :name   "Die Zeit" ;
       :url    "http://www.zeit.de" .
+
+:autos
+      a       :Tag .
+
+:Bookmark_-713867590
+      a       :Bookmark ;
+      :id     "-713867590" ;
+      :isTaggedWith :internet , :computer ;
+      :name   "Chip" ;
+      :url    "http://www.chip.de" .
+
+:Bookmark_915822914
+      a       :Bookmark ;
+      :id     "915822914" ;
+      :isTaggedWith :news ;
+      :name   "Tagesschau" ;
+      :url    "http://www.tagesschau.de" .
+
+:Bookmark_716803671
+      a       :Bookmark ;
+      :id     "716803671" ;
+      :isTaggedWith :bundeswehr ;
+      :name   "Die Bundeswehr" ;
+      :url    "http://www.bundeswehr.de" .
+
+:Bookmark_599976216
+      a       :Bookmark ;
+      :id     "599976216" ;
+      :isTaggedWith :news ;
+      :name   "Süddeutsche Zeitung" ;
+      :url    "http://www.sueddeutsche.de" .
+
+:akka
+      a       :Tag .
+
+:Bookmark_-940704257
+      a       :Bookmark ;
+      :id     "-940704257" ;
+      :isTaggedWith :programming , :git ;
+      :name   "Git Branching" ;
+      :url    "http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging" .
+
+:titten
+      a       :Tag .
+
+:isTaggedWith
+      a       owl:ObjectProperty ;
+      rdfs:domain :Bookmark ;
+      rdfs:range :Tag .
+
+:Bookmark_470432831
+      a       :Bookmark ;
+      :id     "470432831" ;
+      :isTaggedWith :programming ;
+      :name   "Github" ;
+      :url    "http://www.github.com" .
+
+:git  a       :Tag .
+
+:gaming
+      a       :Tag .
+
+:news
+      a       :Tag .
+
+:internet
+      a       :Tag .
+
+:blog
+      a       :Tag .
+
+:apple
+      a       :Tag .
+
+:recherche
+      a       :Tag .
+
+:scala
+      a       :Tag .
+
+:city
+      a       :Tag .
+
+:science
+      a       :Tag .
+
+:mac  a       :Tag .
+
+:id   a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain :Bookmark ;
+      rdfs:range xsd:string .
+
+:computer
+      a       :Tag .
+
+:Bookmark
+      a       owl:Class ;
+      owl:disjointWith :Tag .
+
+:Bookmark_1928056074
+      a       :Bookmark ;
+      :id     "1928056074" ;
+      :isTaggedWith <http://www.openplexus.net/documents#spiele!> ;
+      :name   "PC Games" ;
+      :url    "http://www.pcgames.de" .
+
+:url  a       owl:FunctionalProperty , owl:DatatypeProperty ;
+      rdfs:domain :Bookmark ;
+      rdfs:range xsd:string .
+
+:Tag  a       owl:Class .
 
 <http://www.openplexus.net/documents#spiele!>
       a       :Tag .
@@ -39,13 +141,6 @@
 :bundeswehr
       a       :Tag .
 
-:Bookmark_-713867590
-      a       :Bookmark ;
-      :id     "-713867590" ;
-      :isTaggedWith :internet , :computer ;
-      :name   "Chip" ;
-      :url    "http://www.chip.de" .
-
 :Bookmark_1130185264
       a       :Bookmark ;
       :id     "1130185264" ;
@@ -53,52 +148,13 @@
       :name   "Steam" ;
       :url    "http://www.steampowered.com" .
 
-:Bookmark_915822914
-      a       :Bookmark ;
-      :id     "915822914" ;
-      :isTaggedWith :news ;
-      :name   "Tagesschau" ;
-      :url    "http://www.tagesschau.de" .
-
-:Bookmark_716803671
-      a       :Bookmark ;
-      :id     "716803671" ;
-      :isTaggedWith :bundeswehr ;
-      :name   "Die Bundeswehr" ;
-      :url    "http://www.bundeswehr.de" .
-
 :tasks
       a       :Tag .
-
-:Bookmark_599976216
-      a       :Bookmark ;
-      :id     "599976216" ;
-      :isTaggedWith :news ;
-      :name   "Süddeutsche Zeitung" ;
-      :url    "http://www.sueddeutsche.de" .
 
 :gamining
       a       :Tag .
 
-:titten
-      a       :Tag .
-
-:isTaggedWith
-      a       owl:ObjectProperty ;
-      rdfs:domain :Bookmark ;
-      rdfs:range :Tag .
-
-:Bookmark_470432831
-      a       :Bookmark ;
-      :id     "470432831" ;
-      :isTaggedWith :programming ;
-      :name   "Github" ;
-      :url    "http://www.github.com" .
-
 :programming
-      a       :Tag .
-
-:ebooks
       a       :Tag .
 
 :Bookmark_1116757591
@@ -108,18 +164,15 @@
       :name   "Stadt Sassenberg" ;
       :url    "http://www.sassenberg.de" .
 
-:it   a       :Tag .
+:ebooks
+      a       :Tag .
 
 :python
       a       :Tag .
 
+:it   a       :Tag .
+
 :shopping
-      a       :Tag .
-
-:gaming
-      a       :Tag .
-
-:internet
       a       :Tag .
 
 :Bookmark_465014121
@@ -129,7 +182,7 @@
       :name   "Focus" ;
       :url    "http://focus.de" .
 
-:news
+:actor
       a       :Tag .
 
 :Bookmark_926452599
@@ -138,26 +191,6 @@
       :isTaggedWith :tasks ;
       :name   "Task Management" ;
       :url    "http://www.ubuntugeek.com/nitro-awesome-task-management.html" .
-
-:blog
-      a       :Tag .
-
-:apple
-      a       :Tag .
-
-:scala
-      a       :Tag .
-
-:recherche
-      a       :Tag .
-
-:science
-      a       :Tag .
-
-:city
-      a       :Tag .
-
-:mac  a       :Tag .
 
 :Bookmark_1105871770
       a       :Bookmark ;
@@ -183,10 +216,6 @@
       :name   "Stadt Warendorf" ;
       :url    "http://www.warendorf.de" .
 
-:id   a       owl:FunctionalProperty , owl:DatatypeProperty ;
-      rdfs:domain :Bookmark ;
-      rdfs:range xsd:string .
-
 :Bookmark_228367956
       a       :Bookmark ;
       :id     "228367956" ;
@@ -194,25 +223,14 @@
       :name   "Scala Programming Language" ;
       :url    "http://www.scala-lang.org" .
 
-:computer
-      a       :Tag .
-
-:Bookmark_1928056074
-      a       :Bookmark ;
-      :id     "1928056074" ;
-      :isTaggedWith <http://www.openplexus.net/documents#spiele!> ;
-      :name   "PC Games" ;
-      :url    "http://www.pcgames.de" .
-
-:Bookmark
-      a       owl:Class ;
-      owl:disjointWith :Tag .
-
 :search
       a       :Tag .
 
 <http://www.openplexus.net/documents>
       a       owl:Ontology .
+
+:sparql
+      a       :Tag .
 
 :Bookmark_1688356922
       a       :Bookmark ;

@@ -6,6 +6,8 @@ import edu.uci.ics.crawler4j.url.WebURL
 import edu.uci.ics.crawler4j.parser.{BinaryParseData, HtmlParseData}
 import edu.uci.ics.crawler4j.fetcher.PageFetcher
 import edu.uci.ics.crawler4j.robotstxt.{RobotstxtServer, RobotstxtConfig}
+import controllers.Application._
+import akka.pattern.ask
 
 case class CrawlMessage(url: String, tags: String)
 
@@ -24,7 +26,7 @@ class BookmarkPageCrawler extends WebCrawler {
         indexActor ! IndexMessage(data.getText, page.getWebURL.getURL)
       case data: BinaryParseData =>
         println("Found binary file - " + page.getContentType)
-        //TODO Handling PDF file type - is there a way to implement a pluggable parser for crawler4j?
+      //TODO Handling PDF file type - is there a way to implement a pluggable parser for crawler4j?
     }
   }
 }
@@ -32,6 +34,9 @@ class BookmarkPageCrawler extends WebCrawler {
 class CrawlActor extends Actor {
   def receive = {
     case CrawlMessage(url, tags) =>
+      val tagArray = tags.split(",")
+      tagArray.foreach(s => s.trim())
+      tagArray.foreach(s => dbpediaLookupActor ! DbpediaLookupMessage(s))
       val config = new CrawlConfig()
       config.setCrawlStorageFolder("tmp/crawl")
       config.setMaxDepthOfCrawling(0)

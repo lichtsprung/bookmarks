@@ -11,7 +11,7 @@ case class DbpediaLookupMessage(lookupTerm: String)
  * @author Robert Giacinto
  */
 class DbpediaLookupActor extends Actor {
-  val endpoint = "http://dbpedia.org/sparql"
+  private val endpoint = "http://dbpedia.org/sparql"
 
   /**
    * Returns the SPARQL query that gets the abstracts of the resources with the specified term.
@@ -40,6 +40,7 @@ class DbpediaLookupActor extends Actor {
       |PREFIX dbpedia:<http://dbpedia.org/ontology/>
       |PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
       |PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+      |PREFIX bif: <bif>
       |SELECT DISTINCT ?label WHERE {
       |	?resouces rdf:type TYPE.
       | ?resouces rdfs:label ?label .
@@ -60,19 +61,29 @@ class DbpediaLookupActor extends Actor {
       |PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
       |SELECT DISTINCT ?s ?o	WHERE {
       |	?s rdfs:label ?o.
-      |	?o bif:contains TERM.
-      |
+      |	?o <bif:contains> TERM.
       | FILTER (!regex(str(?s), '^http://dbpedia.org/resource/Category:')).
       |	FILTER (!regex(str(?s), '^http://dbpedia.org/class/yago/')).
       |	FILTER (!regex(str(?s), '^http://sw.opencyc.org/')).
       |	FILTER (lang(?o) = 'en').
       |}
-    """.stripMargin.replaceAllLiterally("TERM", term)
+    """.stripMargin.replaceAllLiterally("TERM", "\"" + term + "\"")
   }
 
   def receive = {
     case DbpediaLookupMessage(term) =>
-      val query = ""
+      val query = getResourcesFor(term)
+      println(query)
       val executionEnv = QueryExecutionFactory.sparqlService(endpoint, query)
+      val results = executionEnv.execSelect()
+
+      println("Results for " + term)
+      while (results.hasNext) {
+        val n = results.next()
+        println(n.getResource("s").getLocalName)
+      }
+      println("---------------------------------------")
+
+      executionEnv.close()
   }
 }

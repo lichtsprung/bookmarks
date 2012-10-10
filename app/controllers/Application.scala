@@ -15,6 +15,7 @@ object Application extends Controller {
   val crawlActor = actorSystem.actorOf(Props[CrawlActor])
   val bookmarkActor = actorSystem.actorOf(Props[BookmarkActor])
   val indexActor = actorSystem.actorOf(Props[IndexActor])
+  val dbpediaLookupActor = actorSystem.actorOf(Props[DbpediaLookupActor])
 
   val form = Form(
     mapping(
