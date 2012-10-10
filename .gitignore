@@ -47,3 +47,7 @@ dist
 
 # Backup files
 /*.*~
+
+# temp folders
+/data
+/tmp
